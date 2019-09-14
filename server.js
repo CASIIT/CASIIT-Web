@@ -12,6 +12,8 @@ app.use(
     })
 );
 
+//HI we are coding
+
 app.use(express.static('public'));
 
 app.use(express.urlencoded({ extended: true }));
