@@ -79,91 +79,54 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 .header {
-  display: block;
-  width: 100%;
-  height: 20%;
-  position: fixed;
-}
-
-.header__top {
-  display: block;
-  width: 100%;
-  height: 70%;
-  position: absolute;
-  top: 0;
-  background-color: #d4d4d4;
+    text-align: center;
+    /*display: block; */
+    height: 200px;
 }
 
 .header__logo {
-  float: left;
-  display: block;
-  margin: auto 5vw;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-image: url('../images/logo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 11vh;
-  width: 11vh;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .header__title {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 14vh;
-  text-transform: capitalize;
-  font-size: 300%;
-  font-family: Raleway, sans-serif;
-  font-weight: 600;
-  text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Sofia', cursive;
+    font-size: 4.5em;
 }
 
-.header__bottom {
-  display: block;
-  width: 100%;
-  height: 30%;
-  position: absolute;
-  bottom: 0;
-  background-color: purple;
+.header__subtitle {
+    font-family: 'Quicksand', sans-serif;
 }
 
 .header__nav {
-  list-style-type: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(101, 45, 146);
 }
 
-.header__nav a {
-  text-decoration: none;
-  color: #c5c5c5;
-  font-weight: 600;
-  font-size: 15px;
-  font-family: Lato, sans-serif;
-  padding: 0 1%;
-  display: inline-block;
-  transition: color 0.5s ease-out;
+.header__nav__listItem {
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.header__nav a:hover {
-  color: #ffffff;
-  transition: color 1s ease-out
+.header__nav__listItem__a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.header__nav .active {
-  border-bottom: 2px solid;
-  padding-bottom: 5px;
-}
+
+/* #d4d4d4 */

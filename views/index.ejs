@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/css/general.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,18 +12,51 @@
     <title>CASIIT</title>
 
     <%const title = 'CASIIT'%>
-    <%const homeactive = 'active'%>
-    <%const faqactive = ''%>
-    <%const dualactive = ''%>
-    <%const earlyactive = ''%>
-    <%const coursesactive = ''%>
-    <%const onlineactive = ''%>
-    <%const calendaractive = ''%>
-    <%const pointsactive = ''%>
+        <%const homeactive = 'active'%>
+            <%const faqactive = ''%>
+                <%const dualactive = ''%>
+                    <%const earlyactive = ''%>
+                        <%const coursesactive = ''%>
+                            <%const onlineactive = ''%>
+                                <%const calendaractive = ''%>
+                                    <%const pointsactive = ''%>
 </head>
 
 <body>
-    <%include embeds/header.ejs%>
+    <div class="header">
+
+        <a href="/" class="header__logo"><img src="images/logo.png" /></a>
+        <h1 class="header__title"> casiit </h1>
+        <h2 class="header__subtitle">Center for Applied Sciences, Interactive and Information Technology</h2>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__listItem">
+                    <a href="/" class="header__nav__listItem__a">Our Program</a>
+                </li>
+                <li class="header__nav__listItem">
+                    <a href="/" class="header__nav__listItem__a">FAQ</a>
+                </li>
+                <li class="header__nav__listItem">
+                    <a href="/" class="header__nav__listItem__a">NVCC Dual Enrollment</a>
+                </li>
+                <li class="header__nav__listItem">
+                    <a href="/" class="header__nav__listItem__a">Virginia Early College Scholars</a>
+                </li>
+                <li class="header__nav__listItem">
+                    <a href="/" class="header__nav__listItem__a">Courses</a>
+                </li>
+                <li class="header__nav__listItem">
+                    <a href="/" class="header__nav__listItem__a">Online Summer Options</a>
+                </li>
+                <li class="header__nav__listItem">
+                    <a href="/" class="header__nav__listItem__a">Calendar</a>
+                </li>
+                <li class="header__nav__listItem">
+                    <a href="/" class="header__nav__listItem__a">CASIIT Points</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </body>
 
 </html>
