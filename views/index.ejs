@@ -15,6 +15,46 @@
 
 <body>
     <%include embeds/header.ejs%>
+        <div class="aboutCasiit">
+            <h2 class="aboutCasiit__title">CASIIT</h2>
+
+            <p class="aboutCasiit__descriptionP">CASIIT is the specialty program of Battlefield High School to prepare students for the future. This unique high school program encompasses everything from graphic design to computer science.</p>
+        </div>
+
+        <div class="news">
+            <h2 class="news__title">CASIIT News</h2>
+            <div class="news__posts">
+                <%
+                for(let i = 0; i < newsPosts.length; i++) {
+            %>
+                    <div class="news__post">
+                        <h3 class="news__post__heading">
+                            <%=newsPosts[i].heading%>
+                        </h3>
+                        <p class="news__post__content">
+                            <%=newsPosts[i].content%>
+                        </p>
+                    </div>
+                    <%
+                }
+            %>
+            </div>
+        </div>
+
+        <div class="programRequirements">
+            <h3 class="programRequirements__title">Program Requirements</h3>
+            <div class="programRequirements__subtitle">As a member of the CASIIT program, there are a number of requirements that must be completed to graduate the program.</div>
+            <div class="programRequirements__content">
+
+            </div>
+        </div>
+
+        <div class="programApplication">
+            <h3 class="programApplication__title">Apply to CASIIT</h3>
+            <div class="programApplication__content">
+
+            </div>
+        </div>
 </body>
 
 </html>

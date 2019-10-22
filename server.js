@@ -18,7 +18,12 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {
+        newsPosts: [
+            { heading: "Hello", content: "This is the post content" },
+            { heading: "Heading2", content: "This is the post content 2" }
+        ]
+    });
 });
 
 app.get('/FAQ', (req, res) => {

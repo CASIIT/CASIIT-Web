@@ -90,7 +90,6 @@ video {
 .header {
     text-align: center;
     /*display: block; */
-    height: 200px;
 }
 
 .header__logo {
@@ -112,7 +111,7 @@ video {
 .header__nav {
     margin-top: 10px;
     padding: 10px;
-    background-color: rgb(101, 45, 146);
+    background-color: #652d92;
 }
 
 .header__nav__listItem {
@@ -126,6 +125,78 @@ video {
     color: white;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
+}
+
+.aboutCasiit {
+    width: 100%;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    height: 50vh;
+    color: white;
+    background-color: #070607;
+}
+
+.aboutCasiit__title {
+    font-size: 2em;
+    font-family: 'Quicksand';
+}
+
+.aboutCasiit__descriptionP {
+    font-family: 'Quicksand';
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 600px;
+    font-size: 1.25em;
+}
+
+.news {
+    width: 100%;
+    height: 45vh;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    background-color: #e7e7e7;
+}
+
+.news__posts {
+    columns: 3;
+}
+
+.news__title {
+    font-size: 2em;
+    font-family: 'Quicksand';
+}
+
+.programRequirements {
+    width: 100%;
+    height: 45vh;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.programRequirements__title {
+    font-size: 2em;
+    font-family: 'Quicksand';
+}
+
+.programRequirements__subtitle {
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: 'Quicksand';
+}
+
+.programRequirements__content {
+    float: left;
+}
+
+.programApplication {
+    width: 100%;
+    height: 45vh;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
 }
 
 
