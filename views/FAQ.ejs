@@ -3,25 +3,49 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="/css/faq.css" />
     <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/faqQuestions.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CASIIT</title>
-    <%const title = 'FAQ'%>
-        <%const homeactive = ''%>
-            <%const faqactive = 'active'%>
-                <%const dualactive = ''%>
-                    <%const earlyactive = ''%>
-                        <%const coursesactive = ''%>
-                            <%const onlineactive = ''%>
-                                <%const calendaractive = ''%>
-                                    <%const pointsactive = ''%>
+    <title>CASIIT | FAQ</title>
+
 </head>
 
 <body>
     <%include embeds/header.ejs%>
+
+        <div class="intro">
+            <h2 class="intro__title">FAQ</h3>
+                <p class="intro__subtitle">We receive a variety of similar questions time and again, so we've compiled a list of the most common questions you may want answers to. Take a look below for any questions you have. </p>
+        </div>
+
+        <div class="questions">
+            <% if(questionsList) {
+            for(let i = 0; i < questionsList.length; i++) { 
+            %>
+                <button id="question" class="question" onClick="questionToggle(this)"> 
+                    <%= questionsList[i].question %>
+                </button>
+                <div class="questions__content">
+                    <p>
+                        <%= questionsList[i].answer %>
+                    </p>
+                </div>
+                <% 
+            }
+        } 
+    %>
+        </div>
+        <div class="askQuestion">
+            <h3 class="askQuestion__description">
+                Still have questions? Email CASIIT head Professor Drake at <a href="@mailto:drakegd@pwcs.edu">drakegd@pwcs.edu</a>
+            </h3>
+        </div>
+        <% include embeds/footer.ejs%>
 </body>
 
 </html>

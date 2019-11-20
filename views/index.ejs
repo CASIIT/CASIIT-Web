@@ -5,15 +5,25 @@
     <link rel="stylesheet" type="text/css" href="/css/general.css" />
     <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script>
+        // function pageInit() {
+        //     let numOfNewsPosts = <%newsPosts.length%>;
+        //     if (numOfNewsPosts < 3) {
+        //         document.getElementsByClassName("news__posts")[0].style.columns = numOfNewsPosts;
+        //     }
+        // }
+    </script>
 
     <title>CASIIT</title>
 
 </head>
 
-<body>
+<body onLoad="pageInit();">
     <%include embeds/header.ejs%>
         <div class="aboutCasiit">
             <h2 class="aboutCasiit__title">CASIIT</h2>
@@ -26,18 +36,31 @@
             <div class="news__posts">
                 <%
                 for(let i = 0; i < newsPosts.length; i++) {
+                    let imageURL;
             %>
-                    <div class="news__post">
-                        <h3 class="news__post__heading">
-                            <%=newsPosts[i].heading%>
-                        </h3>
-                        <p class="news__post__content">
-                            <%=newsPosts[i].content%>
-                        </p>
+                    <div class="column">
+                        <div class="news__post">
+                            <h3 class="news__post__heading">
+                                <%=newsPosts[i].heading%>
+                            </h3>
+                            <%
+                        if(newsPosts[i].image) { 
+                            imageURL = newsPosts[i].image; 
+                        } 
+                        else {
+                            imageURL = newsPosts[i].heading + ".png"
+                        }
+                     %>
+                                <img class="news__post__image" src="/images/<%=imageURL%>" />
+                                <p class="news__post__content">
+                                    <%=newsPosts[i].content%>
+                                </p>
+                        </div>
                     </div>
                     <%
                 }
             %>
+
             </div>
         </div>
 
@@ -52,9 +75,19 @@
         <div class="programApplication">
             <h3 class="programApplication__title">Apply to CASIIT</h3>
             <div class="programApplication__content">
+                <p>Interested in joining CASIIT? Fill out <a href="casiitApp.html">this</a> application.</p>
+            </div>
+        </div>
+
+        <div class="sponsors">
+            <h3 class="sponsors__title">Sponsors</h3>
+            <div class="sponsors__content">
 
             </div>
         </div>
+
+        <%include embeds/footer.ejs%>
+
 </body>
 
 </html>
