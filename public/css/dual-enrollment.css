@@ -1,0 +1,93 @@
+.deHeader {
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 50vh;
+    color: black;
+    background-color: #e7e7e7;
+}
+
+.deHeader__content {
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: 'Raleway', 'Quicksand';
+}
+
+.whyDE {
+    padding: 30px;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 50vh;
+    color: #4b0485;
+    background-color: #b47bda;
+    text-align: left;
+    font-family: 'Quicksand';
+}
+
+.whyDE__list {
+    list-style-type: none;
+}
+
+.whyDE__list li {
+    padding-top: 10px;
+}
+
+.whyDE__list span {
+    display: inline;
+    color: green;
+}
+
+.howToDE {
+    padding: 30px;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 50vh;
+    text-align: left;
+    font-family: 'Quicksand';
+}
+
+.howToDE .sectionTitle {
+    color: #4b0485;
+}
+
+.howToDE__col {
+    float: left;
+    width: 50%;
+}
+
+.howToDE__list li {
+    padding-top: 10px;
+}
+
+.deCasiitCourses {
+    padding: 30px;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 60vh;
+    text-align: left;
+    font-family: 'Quicksand';
+    color: white;
+    background-image: linear-gradient(to bottom right, #19181a, #0b050e);
+}
+
+.deCasiitCourses__content__col {
+    float: left;
+    width: 50%;
+}
+
+.deCasiitCourses__content__col__header {
+    font-size: 1.3em;
+}
+
+.deCasiitCourses__content__col__list {
+    padding-top: 15px;
+}
+
+.deCasiitCourses__content__col__list li {
+    padding-top: 6px;
+}
+
+.deCasiitCourses__content__col__list li::marker {
+    content: "✽";
+    color: #652d92;
+}

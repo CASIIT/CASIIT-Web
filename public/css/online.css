@@ -1,0 +1,50 @@
+.onlineCoursesIntro {
+    min-height: 600px;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    background-color: #e7e7e7;
+    font-family: 'Quicksand';
+}
+
+.onlineCoursesIntro__col {
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+    padding: 40px;
+}
+
+.onlineCoursesIntro__col__header {
+    font-size: 1.5em;
+}
+
+.onlineCoursesIntro__col img {
+    margin-top: 25px;
+    width: 300px;
+    height: 75px;
+}
+
+.onlineCoursesIntro__col__description {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.onlineCoursesIntro__col__moreInfoButton {
+    width: 200px;
+    margin-top: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-family: 'Quicksand';
+}
+
+.onlineCoursesIntro__col__moreInfoButton:hover {
+    background-color: #652d92;
+    cursor: pointer;
+}

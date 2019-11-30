@@ -1,0 +1,99 @@
+.casiitCourses {
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 50vh;
+    color: black;
+    background-color: #e7e7e7;
+    font-family: 'Quicksand';
+}
+
+.casiitCourses__content {
+    font-size: 1.2em;
+}
+
+.casiitCourses__content__button {
+    width: 200px;
+    margin-top: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-family: 'Quicksand';
+}
+
+.casiitCourses__content__button:hover {
+    background-color: #652d92;
+    cursor: pointer;
+}
+
+.ITCourses {
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 50vh;
+    color: black;
+    font-family: 'Quicksand';
+}
+
+.ITCourses__content__courseTable {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    color: white;
+    padding: 300px;
+    text-align: center;
+}
+
+.ITCourses__content__courseTable th {
+    font-weight: bold;
+    font-size: 1.35em;
+    background-color: #652d92;
+    padding: 30px;
+}
+
+.ITCourses__content__courseTable td {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ITCourses__content__courseTable tr {
+    background-color: black;
+}
+
+.ITCourses__content__list {
+    list-style-type: none;
+}
+
+.courseNameP {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.moreCourseInfo {
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 50vh;
+    font-family: "Quicksand";
+}
+
+.moreCourseInfo__button {
+    width: 200px;
+    margin-top: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-family: 'Quicksand';
+}
+
+.moreCourseInfo__button:hover {
+    background-color: #652d92;
+    cursor: pointer;
+}
