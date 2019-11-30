@@ -5,23 +5,61 @@
     <link rel="stylesheet" type="text/css" href="/css/general.css" />
     <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/online.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CASIIT</title>
-    <%const title = 'Online / Summer Options'%>
-        <%const homeactive = ''%>
-            <%const faqactive = ''%>
-                <%const dualactive = ''%>
-                    <%const earlyactive = ''%>
-                        <%const coursesactive = ''%>
-                            <%const onlineactive = 'active'%>
-                                <%const calendaractive = ''%>
-                                    <%const pointsactive = ''%>
+
 </head>
 
 <body>
     <%include embeds/header.ejs%>
+
+        <div class="onlineCoursesIntro">
+            <h2 class="sectionTitle">Online/Summer Courses</h2>
+            <div class="onlineCoursesIntro__content">
+                <p>CASIIT works with the Prince William County Virtual High School and Virginia Virtual High Schools to provide students the option of taking online classes. Classes can be taken during the school year or summer.</p>
+            </div>
+            <div class="onlineCoursesIntro__col">
+                <h3 class="onlineCoursesIntro__col__header">
+                    Prince William County Virtual High School
+                </h3>
+
+                <img src="/images/virtualHighSchoolLogo.png" />
+
+                <p class="onlineCoursesIntro__col__description">
+                    PWCS Virtual High School is an excellent option run by the county system. They offer many different courses, including HPE, history, math, and economics courses. More classes are added annually as demand for online courses rises.
+                </p>
+
+                <a href="https://virtualhs.pwcs.edu/">
+                    <button class="onlineCoursesIntro__col__moreInfoButton ">
+                        PWCS Virtual High School
+                    </button>
+                </a>
+            </div>
+
+            <div class="onlineCoursesIntro__col ">
+                <h3 class="onlineCoursesIntro__col__header ">
+                    Virtual Virginia High School
+                </h3>
+
+                <img src="/images/virtualVirginiaLogo.png " />
+
+                <p class="onlineCoursesIntro__col__description ">
+                    Virtual Virginia is a program run by the Virginia Department of Education to provide students with access to online AP, world language, general education, and elective courses. Students may take many courses not offered by PWC VHS here.
+                </p>
+
+                <a href="https://www.virtualvirginia.org/about/">
+                    <button class="onlineCoursesIntro__col__moreInfoButton ">
+                        Virtual Virginia
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <%include embeds/footer.ejs%>
 </body>
 
 </html>
