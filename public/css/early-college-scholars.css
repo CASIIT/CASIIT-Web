@@ -1,0 +1,67 @@
+.introSection {
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 50vh;
+    color: black;
+    background-color: #e7e7e7;
+    font-family: 'Quicksand';
+}
+
+.introSection__content {
+    font-size: 1.2em;
+}
+
+.requirements {
+    border-top: 1px solid black;
+    padding: 30px;
+    padding-top: 40px;
+    text-align: left;
+    min-height: 50vh;
+    color: black;
+    background-color: #e7e7e7;
+    font-family: 'Quicksand';
+}
+
+.requirements .sectionTitle {
+    color: #652d92;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.requirements__content__list {
+    padding-left: 10px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+.requirements__content__list li {
+    margin-top: 15px;
+}
+
+.requirements__content__list li::marker {
+    color: #652d92;
+}
+
+.requirements__col {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.requirements__button {
+    width: 300px;
+    margin-top: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-family: 'Quicksand';
+}
+
+.requirements__button:hover {
+    background-color: #652d92;
+    cursor: pointer;
+}

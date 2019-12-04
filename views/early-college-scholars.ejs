@@ -3,25 +3,55 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="/css/early-college-scholars.css" />
     <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CASIIT</title>
-    <%const title = 'Virginia Early College Scholars'%>
-        <%const homeactive = ''%>
-            <%const faqactive = ''%>
-                <%const dualactive = ''%>
-                    <%const earlyactive = 'active'%>
-                        <%const coursesactive = ''%>
-                            <%const onlineactive = ''%>
-                                <%const calendaractive = ''%>
-                                    <%const pointsactive = ''%>
+    <title>Early College Scholars | CASIIT</title>
+
 </head>
 
 <body>
     <%include embeds/header.ejs%>
+        <div class="introSection">
+            <h2 class="sectionTitle">Early College Scholars</h2>
+
+            <div class="introSection__content">
+                <p>The Early College Scholars program allows high school students to earn college credit during their high school career by taking advanced, college-level courses.</p>
+            </div>
+        </div>
+        <div class="requirements">
+            <h2 class="sectionTitle"> Requirements of Early College Scholars</h2>
+            <div class="requirements__content">
+                <h3 class="subheading">To qualify for Early College Scholars, you must:</h3>
+                <ul class="requirements__content__list">
+                    <li>Have a "B" average or better</li>
+                    <li>Be pursuing an Advanced Diploma</li>
+                    <li>Take and complete at least 15 transferrable credits worth of college courses(AP, IB, Cambridge, DE)</li>
+                </ul>
+
+                <div class="requirements__col">
+                    <a href="http://www.doe.virginia.gov/instruction/graduation/early_college_scholars/">
+                        <button class="requirements__button">
+                        Learn more about Early College Scholars
+                        </button>
+                    </a>
+                </div>
+                <div class="requirements__col">
+                    <a href="http://www.doe.virginia.gov/instruction/graduation/early_college_scholars/early-college-agreement.pdf">
+                        <button class="requirements__button">
+                        Early College Scholars Agreement Form
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <%include embeds/footer.ejs%>
 </body>
 
 </html>

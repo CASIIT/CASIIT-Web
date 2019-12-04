@@ -7,6 +7,10 @@
     font-family: 'Quicksand';
 }
 
+.onlineCoursesIntro__content {
+    font-size: 1.2em;
+}
+
 .onlineCoursesIntro__col {
     float: left;
     width: 50%;
