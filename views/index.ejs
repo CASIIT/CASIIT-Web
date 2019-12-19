@@ -6,24 +6,24 @@
     <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script>
-        // function pageInit() {
-        //     let numOfNewsPosts = <%newsPosts.length%>;
-        //     if (numOfNewsPosts < 3) {
-        //         document.getElementsByClassName("news__posts")[0].style.columns = numOfNewsPosts;
-        //     }
-        // }
-    </script>
 
-    <title>CASIIT</title>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="/js/newsSlideShow.js"></script>
+
+    <title>CASIIT | Home</title>
 
 </head>
 
-<body onLoad="pageInit();">
+<body onLoad="slideShowInit();">
     <%include embeds/header.ejs%>
         <div class="aboutCasiit">
             <h2 class="sectionTitle">CASIIT</h2>
@@ -33,52 +33,43 @@
 
         <div class="news">
             <h2 class="sectionTitle">CASIIT News</h2>
-            <div class="news__posts">
-                <%
-                for(let i = 0; i < newsPosts.length; i++) {
-                    let imageURL;
-            %>
-                    <div class="column">
-                        <div class="news__post">
-                            <h3 class="news__post__heading">
-                                <%=newsPosts[i].heading%>
-                            </h3>
-                            <%
-                        if(newsPosts[i].image) { 
-                            imageURL = newsPosts[i].image; 
-                        } 
-                        else {
-                            imageURL = newsPosts[i].heading + ".png"
-                        }
-                     %>
-                                <img class="news__post__image" src="/images/<%=imageURL%>" />
-                                <p class="news__post__content">
-                                    <%=newsPosts[i].content%>
-                                </p>
-                        </div>
-                    </div>
-                    <%
-                }
-            %>
+            <div class="news__slideshowContainer">
+
+                <div class="news__slide">
+                    <img src="/images/stockPhoto.jpg">
+                    <div class="text ">Caption Text</div>
+                </div>
+
+                <div class="news__slide">
+                    <img src="/images/stockPhoto.jpg">
+                    <div class="text ">Caption Two</div>
+                </div>
+
+                <div class="news__slide">
+                    <img src="/images/stockPhoto.jpg">
+                    <div class="text ">Caption Three</div>
+                </div>
+
+            </div>
+            <br>
+
+        </div>
+
+        <div class="programRequirements ">
+            <h3 class="sectionTitle ">Program Requirements</h3>
+            <div class="programRequirements__subtitle ">As a member of the CASIIT program, there are a number of requirements that must be completed to graduate the program.</div>
+            <div class="programRequirements__content ">
 
             </div>
         </div>
 
-        <div class="programRequirements">
-            <h3 class="sectionTitle">Program Requirements</h3>
-            <div class="programRequirements__subtitle">As a member of the CASIIT program, there are a number of requirements that must be completed to graduate the program.</div>
-            <div class="programRequirements__content">
-
-            </div>
-        </div>
-
-        <div class="programApplication">
-            <h3 class="sectionTitle">Apply to CASIIT</h3>
-            <div class="programApplication__content">
+        <div class="programApplication ">
+            <h3 class="sectionTitle ">Apply to CASIIT</h3>
+            <div class="programApplication__content ">
                 <p>Joining CASIIT has many benefits for students. It is a great way to invest now for the future. Interested in joining?
                     <br />
-                    <a href="https://www.pwcs.edu/academics___programs/specialty_programs">
-                        <button class="programApplication__content__button">
+                    <a href="https://www.pwcs.edu/academics___programs/specialty_programs ">
+                        <button class="programApplication__content__button ">
                         Apply here
                     </button>
                     </a>
@@ -86,9 +77,9 @@
             </div>
         </div>
 
-        <div class="sponsors">
-            <h3 class="sectionTitle">Sponsors</h3>
-            <div class="sponsors__content">
+        <div class="sponsors ">
+            <h3 class="sectionTitle ">Sponsors</h3>
+            <div class="sponsors__content ">
 
             </div>
         </div>

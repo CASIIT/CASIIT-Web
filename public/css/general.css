@@ -208,6 +208,33 @@ video {
     text-align: left;
 }
 
+
+/* Slideshow container */
+
+.news__slideshowContainer {
+    max-width: 80vw;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.news_slide img {
+    width: 1920;
+    height: 1280;
+}
+
+.slick-prev:before {
+    width: 100px !important;
+    color: black !important;
+}
+
+.slick-next:before {
+    color: black !important;
+}
+
+
+/*News Slideshow end*/
+
 .programRequirements {
     height: 45vh;
     padding: 10px;
