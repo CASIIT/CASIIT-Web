@@ -254,7 +254,16 @@ video {
 }
 
 .programRequirements__content {
-    float: left;
+    font-family: 'Quicksand';
+    float: center;
+}
+
+.programRequirements__content__list {
+    list-style-type: none;
+}
+
+.programRequirements__content__list li {
+    margin-top: 15px;
 }
 
 .programApplication {

@@ -7,7 +7,7 @@ function questionToggle(object) {
         content.style.paddingBottom = "0px";
     } else {
         content.style.paddingTop = "30px";
-        content.style.paddingBottom = "45px";
+        content.style.paddingBottom = (30 + content.scrollHeight) + "px";
         content.style.maxHeight = content.scrollHeight + "px";
         console.log(content.scrollHeight);
     }
