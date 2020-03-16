@@ -236,7 +236,7 @@ video {
 /*News Slideshow end*/
 
 .programRequirements {
-    height: 45vh;
+    height: 55vh;
     padding: 10px;
     padding-top: 40px;
     text-align: center;
@@ -251,6 +251,8 @@ video {
     margin: 10px;
     font-size: 1.2em;
     font-family: 'Quicksand';
+    padding-bottom: 10px;;
+    border-bottom: 1px solid black;
 }
 
 .programRequirements__content {
@@ -264,6 +266,23 @@ video {
 
 .programRequirements__content__list li {
     margin-top: 15px;
+}
+
+.programRequirements__content__button {
+    width: 200px;
+    margin-top: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-family: 'Quicksand';
+}
+
+.programRequirements__content__button:hover {
+    background-color: #652d92;
+    cursor: pointer;
 }
 
 .programApplication {
