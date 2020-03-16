@@ -2,24 +2,145 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="/css/general.css" />
-  <title>CASIIT</title>
-  <%const title = 'Courses'%>
-    <%const homeactive = ''%>
-      <%const faqactive = ''%>
-        <%const dualactive = ''%>
-          <%const earlyactive = ''%>
-            <%const coursesactive = 'active'%>
-              <%const onlineactive = ''%>
-                <%const calendaractive = ''%>
-                  <%const pointsactive = ''%>
+    <link rel="stylesheet" type="text/css" href="/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="/css/courses.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CASIIT</title>
+
 </head>
 
 <body>
-  <%include embeds/header.ejs%>
+    <%include embeds/header.ejs%>
+
+        <div class="casiitCourses">
+            <h2 class="sectionTitle">CASIIT Courses</h2>
+            <div class="casiitCourses__content">
+                <p>CASIIT offers a plethora of unique courses to prepare students for the future. Check out information about our courses below:</p>
+                <a href="https://www.pwcs.edu/cms/one.aspx?portalid=340225&pageid=748928">
+                    <button class="casiitCourses__content__button">
+                        PWCS High School Catalog
+                    </button>
+                </a>
+            </div>
+
+        </div>
+        <div class="ITCourses">
+            <h2 class="sectionTitle">Information Technology Courses</h2>
+            <div class="ITCourses__content">
+                <p class="ITCourses__content__desc">
+                    Information Technology courses are those relating to data management, software design, and web technologies. Some courses involve programming but do not fit under the category of Computer Science.
+                </p>
+                <table class="ITCourses__content__courseTable">
+                    <tr>
+                        <th>Course id</th>
+                        <th>Course name</th>
+                        <th>Grade level</th>
+                    </tr>
+                    <%
+                        for(let i = 0; i < iTCourses.length; i++) {                        
+                    %>
+                        <tr>
+                            <td>
+                                <%=(iTCourses[i].id != null) ? iTCourses[i].id : ""%>
+                            </td>
+                            <td>
+                                <p class="courseNameP">
+                                    <%=(iTCourses[i].name != null) ? iTCourses[i].name : ""%>
+                                </p>
+                            </td>
+                            <td>
+                                <%=(iTCourses[i].grade != null) ? iTCourses[i].grade : ""%>
+                            </td>
+                        </tr>
+                        <%
+                        }
+                    %>
+                </table>
+            </div>
+
+
+
+            <h2 class="sectionTitle">Applied Sciences</h2>
+            <div class="ITCourses__content">
+                <p class="ITCourses__content__desc">
+                    Applied Sciences Courses deal with combining different sciences and finding real world applications for that theory. Applied Sciences includes Computer Science, Robotics, and more.
+                </p>
+                <table class="ITCourses__content__courseTable">
+                    <tr>
+                        <th>Course id</th>
+                        <th>Course name</th>
+                        <th>Grade level</th>
+                    </tr>
+                    <%
+                        for(let i = 0; i < appliedSciencesCourses.length; i++) {                        
+                    %>
+                        <tr>
+                            <td>
+                                <%=(appliedSciencesCourses[i].id != null) ? appliedSciencesCourses[i].id : ""%>
+                            </td>
+                            <td>
+                                <p class="courseNameP">
+                                    <%=(appliedSciencesCourses[i].name != null) ? appliedSciencesCourses[i].name : ""%>
+                                </p>
+                            </td>
+                            <td>
+                                <%=(appliedSciencesCourses[i].grade != null) ? appliedSciencesCourses[i].grade : ""%>
+                            </td>
+                        </tr>
+                        <%
+                        }
+                    %>
+                </table>
+            </div>
+
+            <h2 class="sectionTitle">Interactive Media</h2>
+            <div class="ITCourses__content">
+                <p class="ITCourses__content__desc">
+                    Interactive Media focuses on the use of technology to create art and graphics. This includes graphic design, digital art, and photography.
+                </p>
+                <table class="ITCourses__content__courseTable">
+                    <tr>
+                        <th>Course id</th>
+                        <th>Course name</th>
+                        <th>Grade level</th>
+                    </tr>
+                    <%
+                        for(let i = 0; i < interactiveMediaCourses.length; i++) {                        
+                    %>
+                        <tr>
+                            <td>
+                                <%=(interactiveMediaCourses[i].id != null) ? interactiveMediaCourses[i].id : ""%>
+                            </td>
+                            <td>
+                                <p class="courseNameP">
+                                    <%=(interactiveMediaCourses[i].name != null) ? interactiveMediaCourses[i].name : ""%>
+                                </p>
+                            </td>
+                            <td>
+                                <%=(interactiveMediaCourses[i].grade != null) ? interactiveMediaCourses[i].grade : ""%>
+                            </td>
+                        </tr>
+                        <%
+                        }
+                    %>
+                </table>
+            </div>
+        </div>
+        <div class="moreCourseInfo">
+            <p>Specific information about CASIIT Courses can be found at the Battlefield Site:</p>
+            <a href="https://battlefieldhs.pwcs.edu/common/pages/DisplayFile.aspx?itemId=27649531">
+                <button class="moreCourseInfo__button">
+                        CASIIT Course Info
+                    </button>
+            </a>
+        </div>
+        <% include embeds/footer.ejs%>
+
 </body>
 
 </html>

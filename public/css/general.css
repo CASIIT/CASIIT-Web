@@ -79,91 +79,296 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 .header {
-  display: block;
-  width: 100%;
-  height: 20%;
-  position: fixed;
-}
-
-.header__top {
-  display: block;
-  width: 100%;
-  height: 70%;
-  position: absolute;
-  top: 0;
-  background-color: #d4d4d4;
+    text-align: center;
+    /*display: block; */
 }
 
 .header__logo {
-  float: left;
-  display: block;
-  margin: auto 5vw;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-image: url('../images/logo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 11vh;
-  width: 11vh;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .header__title {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 14vh;
-  text-transform: capitalize;
-  font-size: 300%;
-  font-family: Raleway, sans-serif;
-  font-weight: 600;
-  text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Sofia', cursive;
+    font-size: 4.5em;
 }
 
-.header__bottom {
-  display: block;
-  width: 100%;
-  height: 30%;
-  position: absolute;
-  bottom: 0;
-  background-color: purple;
+.header__subtitle {
+    font-family: 'Quicksand', sans-serif;
 }
 
 .header__nav {
-  list-style-type: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #652d92;
 }
 
-.header__nav a {
-  text-decoration: none;
-  color: #c5c5c5;
-  font-weight: 600;
-  font-size: 15px;
-  font-family: Lato, sans-serif;
-  padding: 0 1%;
-  display: inline-block;
-  transition: color 0.5s ease-out;
+.header__nav__listItem {
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.header__nav a:hover {
-  color: #ffffff;
-  transition: color 1s ease-out
+.header__nav__listItem__a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.header__nav .active {
-  border-bottom: 2px solid;
-  padding-bottom: 5px;
+.sectionTitle {
+    font-size: 2em;
+    font-family: 'Quicksand';
 }
+
+.aboutCasiit {
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    height: 50vh;
+    color: white;
+    background-color: #070607;
+}
+
+.aboutCasiit__title {
+    font-size: 2em;
+    font-family: 'Quicksand';
+}
+
+.aboutCasiit__descriptionP {
+    font-family: 'Quicksand';
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 600px;
+    font-size: 1.25em;
+}
+
+.news {
+    min-height: 600px;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    background-color: #e7e7e7;
+    font-family: 'Quicksand';
+}
+
+.news__title {
+    font-size: 2em;
+}
+
+.news__posts {
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.news__posts:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.news__post {
+    padding: 0;
+    border: 2px solid black;
+    max-width: 350px;
+}
+
+.news__post__heading {
+    font-size: 1.8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #652d92;
+}
+
+.news__post__image {
+    width: 100%;
+    height: 250px;
+}
+
+.news__post__content {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+
+/* Slideshow container */
+
+.news__slideshowContainer {
+    max-width: 80vw;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.news_slide img {
+    width: 1920;
+    height: 1280;
+}
+
+.slick-prev:before {
+    width: 100px !important;
+    color: black !important;
+}
+
+.slick-next:before {
+    color: black !important;
+}
+
+
+/*News Slideshow end*/
+
+.programRequirements {
+    height: 45vh;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.programRequirements__title {
+    font-size: 2em;
+    font-family: 'Quicksand';
+}
+
+.programRequirements__subtitle {
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: 'Quicksand';
+}
+
+.programRequirements__content {
+    font-family: 'Quicksand';
+    float: center;
+}
+
+.programRequirements__content__list {
+    list-style-type: none;
+}
+
+.programRequirements__content__list li {
+    margin-top: 15px;
+}
+
+.programApplication {
+    border-top: 1px solid #652d92;
+    height: 45vh;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+.programApplication__content {
+    margin-top: 10px;
+}
+
+.programApplication__content__button {
+    width: 200px;
+    margin-top: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-family: 'Quicksand';
+}
+
+.programApplication__content__button:hover {
+    background-color: #652d92;
+    cursor: pointer;
+}
+
+.sponsors {
+    color: white;
+    height: 45vh;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    background-color: #070607;
+}
+
+.sponsors__title {
+    font-size: 2em;
+    font-family: 'Quicksand';
+}
+
+.footer {
+    background-color: #652d92;
+    padding: 30px;
+    min-height: 200px;
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+.footer__content {
+    margin-top: 40px;
+    columns: 3;
+}
+
+.footerHeading {
+    font-size: 2em;
+}
+
+.footerText {
+    font-size: 15px;
+}
+
+.footerText a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.footerText a:hover {
+    text-decoration: underline;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.signature {
+    margin-top: 40px;
+}
+
+
+/* #d4d4d4 */

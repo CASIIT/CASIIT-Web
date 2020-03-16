@@ -2,24 +2,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="/css/general.css" />
-  <title>CASIIT</title>
-  <%const title = 'NVCC Dual Enrollment'%>
-    <%const homeactive = ''%>
-      <%const faqactive = ''%>
-        <%const dualactive = 'active'%>
-          <%const earlyactive = ''%>
-            <%const coursesactive = ''%>
-              <%const onlineactive = ''%>
-                <%const calendaractive = ''%>
-                  <%const pointsactive = ''%>
+    <link rel="stylesheet" type="text/css" href="/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dual-enrollment.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CASIIT</title>
+
 </head>
 
 <body>
-  <%include embeds/header.ejs%>
+    <%include embeds/header.ejs%>
+
+        <div class="deHeader">
+            <h2 class="sectionTitle">Dual Enrollment</h2>
+            <div class="deHeader__content">
+                <p>CASIIT offers dual enrolled classes with Northern Virginia Community College (NVCC). This allows our students to receive college credits while in high school.</p>
+                <img src="/images/dualEnrollment.png" />
+            </div>
+        </div>
+
+        <div class="whyDE">
+            <h2 class="sectionTitle">Why take Dual Enrolled Classes?</h2>
+            <ul class="whyDE__list">
+                <li> <span class="fa fa-check fa-2x"></span>Recieve college and high school credits for the same class</li>
+                <li><span class="fa fa-check fa-2x"></span>Reduce your time in college and get a head start</li>
+                <li><span class="fa fa-check fa-2x"></span>Prepare for the rigor of college courses while in high school</li>
+                <li><span class="fa fa-check fa-2x"></span>Save money - the county covers the tuition</li>
+            </ul>
+        </div>
+
+        <div class="howToDE">
+            <div class="howToDE__content">
+                <div class="howToDE__col">
+                    <p style="color:white">t</p>
+                </div>
+                <div class="howToDE__col">
+                    <h2 class="sectionTitle">Become a Dual Enrolled Student</h2>
+                    <p>Ready to dual enroll? Follow these steps to enroll yourself:</p>
+                    <ol class="howToDE__list">
+                        <li>Apply to NVCC
+                            <a href="https://battlefieldhs.pwcs.edu/common/pages/UserFile.aspx?fileId=31112412">here</a>
+                        </li>
+                        <li>
+                            Check if your PSAT score, SAT score, or other similar test scores qualify you for DE classes
+                            <a href="https://www.nvcc.edu/dual-enrollment/checklist.html">here</a>. If not, sign up to take the Virginia Placement Test
+                        </li>
+                        <li>
+                            Take the Virginia Placement Test. You may take the test at Battlefield High School according to this schedule or at the NOVA campus Monday thru Friday.
+                        </li>
+                        <li>
+                            Fill out intent forms for each DE course you plan to take. Intent forms are available at the NOVA and
+                            <a href="https://battlefieldhs.pwcs.edu/our_school/casiit/n_v_c_c_dual_enrollment">Battlefield</a> sites.
+                        </li>
+                        <li>
+                            Get excited to enter the world of college!
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="deCasiitCourses">
+            <h2 class="sectionTitle">Which courses does Battlefield offer?</h2>
+            <div class="deCasiitCourses__content">
+                <div class="deCasiitCourses__content__col">
+                    <h3 class="deCasiitCourses__content__col__header">Dual Enrolled CASIIT Courses</h3>
+                    <ul class="deCasiitCourses__content__col__list">
+                        <li>Database DE (ITD132/ITD256)</li>
+                        <li>Adv. Database DE (ITD134/ITE115)</li>
+                        <li>Adv Web Technology (ITE170/ITP100)</li>
+                        <li>Cybersecurity Networking DE (ITN100/ITN260)</li>
+                        <li>IT Fundamentals DE (ITE115) </li>
+                        <li>Cisco Networking 1/2 (ITN154/ITN155)</li>
+                        <li>Cisco Networking 3/4 (ITN156/ITN157)</li>
+                    </ul>
+                </div>
+                <div class="deCasiitCourses__content__col">
+                    <h3 class="deCasiitCourses__content__col__header">Dual Enrolled GenEd Courses</h3>
+                    <ul class="deCasiitCourses__content__col__list">
+                        <li>English 12 DE (ENG111/ENG112) </li>
+                        <li>Government DE (PLS211/PLS212)</li>
+                        <li>US/VA History DE (HIS121/HIS122)</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+                <h2 class="sectionTitle">Still have questions about Dual Enrollment?</h2>
+                Visit the NVCC Dual Enrollment
+                <a href="https://www.nvcc.edu/dual-enrollment/">page</a> and the NVCC 504 plan
+                <a href="https://pwcps-my.sharepoint.com/personal/drakegd_pwcs_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdrakegd%5Fpwcs%5Fedu%2FDocuments%2FNVCC%20DE%20Intent%20Forms%2FNVCC%20accommodations%20information%20on%20Dual%20Enrollment%2Epdf&parent=%2Fpersonal%2Fdrakegd%5Fpwcs%5Fedu%2FDocuments%2FNVCC%20DE%20Intent%20Forms&originalPath=aHR0cHM6Ly9wd2Nwcy1teS5zaGFyZXBvaW50LmNvbS86YjovZy9wZXJzb25hbC9kcmFrZWdkX3B3Y3NfZWR1L0VjRUFBSHdUa05KSm1YWWVINXNVa1d3Qm9iSFpGYmIwTVF2WTN6QmZ4cEVGT0E_cnRpbWU9akZiTWFudHcxMGc">
+                    guide</a></div>
+
+        </div>
+
+        <%include embeds/footer.ejs%>
 </body>
 
 </html>
