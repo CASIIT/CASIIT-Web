@@ -164,63 +164,17 @@ video {
     font-family: 'Quicksand';
 }
 
-.news__title {
-    font-size: 2em;
-}
-
-.news__posts {
-    margin-top: 25px;
-    padding: 20px;
-}
-
-.news__posts:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-}
-
-.news__post {
-    padding: 0;
-    border: 2px solid black;
-    max-width: 350px;
-}
-
-.news__post__heading {
-    font-size: 1.8em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    background-color: #652d92;
-}
-
-.news__post__image {
-    width: 100%;
-    height: 250px;
-}
-
-.news__post__content {
-    padding: 5px 10px;
-    text-align: left;
-}
-
-
 /* Slideshow container */
 
 .news__slideshowContainer {
-    max-width: 80vw;
+    max-width: 60vw;
     position: relative;
     margin: auto;
     text-align: center;
 }
 
-.news_slide img {
-    width: 1920;
-    height: 1280;
+.newsImage {
+    max-width: 100%;
 }
 
 .slick-prev:before {
