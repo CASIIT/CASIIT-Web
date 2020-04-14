@@ -130,7 +130,8 @@ video {
 
 .sectionTitle {
     font-size: 2em;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: .08em;
 }
 
 .aboutCasiit {
@@ -140,6 +141,7 @@ video {
     height: 50vh;
     color: white;
     background-color: #070607;
+    line-height: 26pt;
 }
 
 .aboutCasiit__title {

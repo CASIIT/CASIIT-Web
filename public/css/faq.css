@@ -4,7 +4,7 @@
     text-align: center;
     height: 50vh;
     color: black;
-    background-color: #e7e7e7;
+    background-color: #ffffff;
 }
 
 .intro__title {
@@ -15,6 +15,7 @@
 .intro__subtitle {
     margin: 10px;
     font-size: 1.2em;
+    line-height: 25pt;
     font-family: 'Quicksand';
 }
 
