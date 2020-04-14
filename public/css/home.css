@@ -1,0 +1,53 @@
+.homeMain {
+    height: 90vh;
+    width: 100%;
+    background: white url('../images/home/homeMainBackground.svg') no-repeat right top;
+    background-size: 100%;
+}
+
+.homeMainContent {
+    height: 100%;
+    width: 90%;
+    margin-left: 100px;
+    text-align: center;
+    padding: 30px;
+    display:grid;
+    grid-template-columns: 55% 40%;
+}
+
+.homeMainLogo {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: -80px;
+    width: 175px;
+
+}
+
+.homeMainHeading {
+    color: var(--themePurple);
+    font-size: 2em;
+    overflow: hidden;
+
+    margin-bottom: 50px;
+}
+
+.homeMainSubheading {
+    font-size: 1.4em;
+    margin-bottom: 50px;
+}
+
+.homeMainButton {
+    font-size: 1em;
+}
+
+.newsSection {
+    padding: 30px;
+    height: 150vh;
+    text-align: center;
+}
+
+.newsHeading {
+    font-size: 2.5em;
+    color: var(--themePurple);
+    font-weight: 700;
+}
