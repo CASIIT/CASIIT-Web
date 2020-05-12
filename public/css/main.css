@@ -94,6 +94,7 @@ video {
 
 :root {
     --themePurple: #652D92;
+    --themeGreen: #16db20;
 }
 
 header {
@@ -125,7 +126,6 @@ header {
 #headerLogo {
     width: 85px;
     opacity: 0;
-    display:none;
     transition: .3s;
 }
 
@@ -164,10 +164,74 @@ header {
 .header__nav__listItem__a {
     display: block;
     text-decoration: none;
-    color: #218A25;
+    color: var(--themeGreen);
     opacity: 1;
     font-weight: 700;
 }
+
+footer {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 25px;
+    text-align:center;
+    margin:0 auto;
+    padding: 20px;
+    background-color: var(--themePurple);
+    min-height: 300px;
+    color:white;
+}
+
+.footerMissionStatement {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footerColumn {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footerHeader {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.footerText {
+    font-weight: 500;
+}
+
+.footerLink {
+    color: #16db20;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.footerCopyright {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* General Style classes */
 
 .button {
     min-width: 200px;
@@ -179,9 +243,16 @@ header {
     color: white;
     transition: .3s;
     font-family: 'Quicksand';
+    font-weight: 500;
 }
 
 .button:hover {
     background-color: #652d92;
     cursor: pointer;
 }
+
+.sectionHeader {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+

@@ -8,3 +8,16 @@ function slideShowInit() {
         nextArrow: '<button type="button" class="slick-next news__slideShowArrow">Next</button>'
     });
 }
+
+// let newsImages = document.getElementsByClassName("newsImage");
+// Array.from(newsImages).forEach(element => {
+//     element.style.zIndex = "relative";
+// });  
+
+// let newsSlides = document.getElementsByClassName("news__slide");
+// Array.from(newsSlides).forEach(element => {
+//     element.style.position = "relative";
+// });
+
+document.getElementsByClassName("news__slideshowContainer")[0].style.position = "relative";
+document.getElementsByClassName("news__slideshowContainer")[0].style.zIndex = "-1";
