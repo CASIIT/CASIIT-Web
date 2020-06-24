@@ -2,25 +2,47 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="/css/faq.css" />
-    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link href="/css/faq.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
     <link rel="icon" type="image/png" href="/images/logo.png" />
 
-    <script src="/js/faqQuestions.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CASIIT | FAQ</title>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/faqQuestions.js"></script>
+
+    <title>CASIIT | FAQ </title>
 
 </head>
 
 <body>
 
 
-    <object type="image/svg+xml" data="/images/home/Group 7.svg" style="width: 100vw;"></object>
+    <% include embeds/header.ejs%>
+    <script>
+        let elements = Array.from(document.getElementsByClassName("header__nav__listItem__a"));
+        elements.forEach(element => {
+            if (element.innerText.toLowerCase() == "faq") {
+                element.classList.add("nav_active");
+            }
+        });
+    </script>
+
+    <div class="faqMain">
+        <h1 class="faqMainHeading">Frequently Asked Questions</h1>
+        <h2 class="faqMainSubheading">Have questions? We have answers.</h2>
+    </div>
 
     <!-- <div class="intro">
         <h2 class="intro__title">FAQ</h3>
@@ -28,6 +50,10 @@
                 list of the most common questions you may want answers to. Take a look below for any questions you have.
             </p>
     </div> -->
+    <div class="questionSearchDiv">
+        <label for="searchQuestions">Search Questions: </label>
+        <input type="text" class="searchQuestions" id="searchQuestions" />
+    </div>
 
     <div class="questions">
         <% if(questionsList) {
@@ -47,10 +73,25 @@
     %>
     </div>
     <div class="askQuestion">
-        <h3 class="askQuestion__description">
-            Still have questions? Email CASIIT head Professor Drake at <a
-                href="@mailto:drakegd@pwcs.edu">drakegd@pwcs.edu</a>
-        </h3>
+        <h1 class="askQuestionHeading">Still have Questions?</h1>
+        <h3 class="askQuestionSubheading">Send us a question and we'll get you an answer. Sweet and simple.</h3>
+        <div class="askQuestionFormDiv">
+            <div class="askQuestionFormColumnLeft">
+                <div class="leftColumnContent"><img src="images/logo.png" alt="CASIIT Logo" /></div>
+            </div>
+            <form action="sendEmail" class="askQuestionForm" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" class="askQuestionInput" id="name" name="name" />
+
+                <label for="email">Email:</label>
+                <input type="email" class="askQuestionInput" id="email" name="email" />
+
+                <label for="question">Question:</label>
+                <textarea type="text" class="askQuestionInput" id="question" name="question" rows="4"
+                    cols="25"></textarea>
+                <input type="submit" value="Submit" class="askQuestionSubmitButton" name="Submit" />
+            </form>
+        </div>
     </div>
     <% include embeds/footer.ejs%>
 </body>

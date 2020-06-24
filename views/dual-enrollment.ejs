@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="stylesheet" type="text/css" href="/css/dual-enrollment.css" />
-    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="/images/logo.png" />
 
@@ -19,65 +21,82 @@
 
 <body>
     <%include embeds/header.ejs%>
+    <script>
+        let elements = Array.from(document.getElementsByClassName("header__nav__listItem__a"));
+        elements.forEach(element => {
+            if (element.innerText.toLowerCase() == "dual enrollment") {
+                element.classList.add("nav_active");
+            }
+        });
+    </script>
 
     <div class="deHeader">
-        <h2 class="sectionTitle">Dual Enrollment</h2>
+        <h2 class="deHeaderTitle">Dual Enrollment</h2>
         <div class="deHeader__content">
-            <p>CASIIT offers dual enrolled classes with Northern Virginia Community College (NVCC). This allows our
-                students to receive college credits while in high school.</p>
-            <img src="/images/dualEnrollment.png" />
+            <p>Get college credits in high school. Save time and money!</p>
         </div>
     </div>
 
+    <div class="whatIsDE">
+        <h2 class="whatIsDETitle">What are Dual Enrolled Classes</h2>
+        <div class="whatIsDEContent">
+            <p>Dual Enrolled classes are classes where students take courses in high school for which they earn college
+                credits. Battlefield students have the option of taking NOVA courses for many different classes.</p>
+            <p>DE classes prepare students for the rigors of college with the support of the high school system. These
+                courses usually transfer to other in-state colleges even if they don't attend NOVA. </p>
+            <p>Because these are college courses, they follow the NOVA grading scale and timing. They are, however,
+                taught at Battlefield. </p>
+        </div>
+    </div>
+    <hr />
     <div class="whyDE">
-        <h2 class="sectionTitle">Why take Dual Enrolled Classes?</h2>
-        <ul class="whyDE__list">
-            <li> <span class="fa fa-check fa-2x"></span>Recieve college and high school credits for the same class</li>
-            <li><span class="fa fa-check fa-2x"></span>Reduce your time in college and get a head start</li>
-            <li><span class="fa fa-check fa-2x"></span>Prepare for the rigor of college courses while in high school
-            </li>
-            <li><span class="fa fa-check fa-2x"></span>Save money - the county covers the tuition</li>
-        </ul>
+        <h2 class="whyDETitle">Why take Dual Enrolled Classes?</h2>
+        <div class="whyDEContent">
+            <ul class="whyDE__list">
+                <li> <span class="fa fa-check fa-2x"></span>Recieve college and high school credits for the same class
+                </li>
+                <li><span class="fa fa-check fa-2x"></span>Reduce your time in college and get a head start</li>
+                <li><span class="fa fa-check fa-2x"></span>Prepare for the rigor of college courses while in high school
+                </li>
+                <li><span class="fa fa-check fa-2x"></span>Save money - the county covers the tuition</li>
+            </ul>
+        </div>
     </div>
 
     <div class="howToDE">
+
+
+        <h2 class="sectionTitle">Become a Dual Enrolled Student</h2>
         <div class="howToDE__content">
-            <div class="howToDE__col">
-                <p style="color:white">t</p>
-            </div>
-            <div class="howToDE__col">
-                <h2 class="sectionTitle">Become a Dual Enrolled Student</h2>
-                <p>Ready to dual enroll? Follow these steps to enroll yourself:</p>
-                <ol class="howToDE__list">
-                    <li>Apply to NVCC
-                        <a href="https://battlefieldhs.pwcs.edu/common/pages/UserFile.aspx?fileId=31112412">here</a>
-                    </li>
-                    <li>
-                        Check if your PSAT score, SAT score, or other similar test scores qualify you for DE classes
-                        <a href="https://www.nvcc.edu/dual-enrollment/checklist.html">here</a>. If not, sign up to take
-                        the Virginia Placement Test
-                    </li>
-                    <li>
-                        Take the Virginia Placement Test. You may take the test at Battlefield High School according to
-                        this schedule or at the NOVA campus Monday thru Friday.
-                    </li>
-                    <li>
-                        Fill out intent forms for each DE course you plan to take. Intent forms are available at the
-                        NOVA and
-                        <a
-                            href="https://battlefieldhs.pwcs.edu/our_school/casiit/n_v_c_c_dual_enrollment">Battlefield</a>
-                        sites.
-                    </li>
-                    <li>
-                        Get excited to enter the world of college!
-                    </li>
-                </ol>
-            </div>
+
+            <ol class="howToDE__list">
+                <li>Apply to NVCC
+                    <a href="https://battlefieldhs.pwcs.edu/common/pages/UserFile.aspx?fileId=31112412">here</a>
+                </li>
+                <li>
+                    Check if your PSAT score, SAT score, or other similar test scores qualify you for DE classes
+                    <a href="https://www.nvcc.edu/dual-enrollment/checklist.html">here</a>. If not, sign up to take
+                    the Virginia Placement Test
+                </li>
+                <li>
+                    Take the Virginia Placement Test. You may take the test at Battlefield High School according to
+                    this schedule or at the NOVA campus Monday thru Friday.
+                </li>
+                <li>
+                    Fill out intent forms for each DE course you plan to take. Intent forms are available at the
+                    NOVA and
+                    <a href="https://battlefieldhs.pwcs.edu/our_school/casiit/n_v_c_c_dual_enrollment">Battlefield</a>
+                    sites.
+                </li>
+                <li>
+                    You're a college student now!
+                </li>
+            </ol>
         </div>
     </div>
 
     <div class="deCasiitCourses">
-        <h2 class="sectionTitle">Which courses does Battlefield offer?</h2>
+        <h2 class="deCasiitCoursesTitle">Which courses does Battlefield offer?</h2>
         <div class="deCasiitCourses__content">
             <div class="deCasiitCourses__content__col">
                 <h3 class="deCasiitCourses__content__col__header">Dual Enrolled CASIIT Courses</h3>
@@ -103,12 +122,13 @@
         </div>
         <div>
 
-            <h2 class="sectionTitle">Still have questions about Dual Enrollment?</h2>
-            Visit the NVCC Dual Enrollment
-            <a href="https://www.nvcc.edu/dual-enrollment/">page</a> and the NVCC 504 plan
+            <h2 class="sectionTitle">Need more details about Dual Enrollment?</h2>
+
+            <a href="https://www.nvcc.edu/dual-enrollment/"><button class="button moreDetailsButton">NVCC Dual
+                    Enrollment</button></a>
             <a
                 href="https://pwcps-my.sharepoint.com/personal/drakegd_pwcs_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdrakegd%5Fpwcs%5Fedu%2FDocuments%2FNVCC%20DE%20Intent%20Forms%2FNVCC%20accommodations%20information%20on%20Dual%20Enrollment%2Epdf&parent=%2Fpersonal%2Fdrakegd%5Fpwcs%5Fedu%2FDocuments%2FNVCC%20DE%20Intent%20Forms&originalPath=aHR0cHM6Ly9wd2Nwcy1teS5zaGFyZXBvaW50LmNvbS86YjovZy9wZXJzb25hbC9kcmFrZWdkX3B3Y3NfZWR1L0VjRUFBSHdUa05KSm1YWWVINXNVa1d3Qm9iSFpGYmIwTVF2WTN6QmZ4cEVGT0E_cnRpbWU9akZiTWFudHcxMGc">
-                guide</a>
+                <button class="button moreDetailsButton">NVCC 504 Plan Guide</button></a>
         </div>
 
     </div>

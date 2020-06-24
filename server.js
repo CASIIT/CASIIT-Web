@@ -1,5 +1,6 @@
 const express = require('express');
 const session = require('express-session');
+const emailSender = require('./sendEmail');
 
 const app = express();
 
@@ -64,6 +65,8 @@ app.get('/dual-enrollment', (req, res) => {
 app.get('/early-college-scholars', (req, res) => {
     res.render('early-college-scholars');
 });
+
+router.use('/courses', require('/coursesRouter').router);
 
 app.get('/courses', (req, res) => {
     res.render('courses', {
@@ -193,6 +196,10 @@ app.get('/calendar', (req, res) => {
 app.get('/points', (req, res) => {
     res.render('points');
 });
+
+app.post('/sendEmail', (req, res) => {
+    emailSender.sendEmail("", "", "");
+})
 
 const PORT = process.env.PORT || 3000;
 

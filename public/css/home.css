@@ -136,7 +136,7 @@
 }
 
 .programRequirements {
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 30px;
     text-align: center;
     background-color: white;
@@ -158,7 +158,7 @@
 .programRequirementsList li {
     list-style-type: none;
     width: 375px;   
-    height: 125px;
+    height: 190px;
     border: 4px solid black;
     border-radius: 8px;
     margin: 50px;
@@ -221,7 +221,7 @@
 .readyToJoinSubHeader {
     margin-top: 50px;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .readyToJoinButton {

@@ -95,6 +95,8 @@ video {
 :root {
     --themePurple: #652D92;
     --themeGreen: #16db20;
+    --textGreen: #12b11a;
+    --purpleOnBlack: #820FDF;
 }
 
 header {
@@ -125,7 +127,6 @@ header {
 
 #headerLogo {
     width: 85px;
-    opacity: 0;
     transition: .3s;
 }
 
@@ -167,6 +168,50 @@ header {
     color: var(--themeGreen);
     opacity: 1;
     font-weight: 700;
+}
+
+.dropBtn {
+    background-color: white;
+    border: none;
+    color: var(--themeGreen);
+    font-weight: 700;
+    font-size: 1em;
+    padding: 6px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: .9em;
+    font-weight: 500;
+    transition: .15s;
+}
+
+.dropdown_content a:hover {
+    border-bottom: 5px solid var(--purpleOnBlack);
+    padding-bottom: 7px;
+    transition: .15s border, padding;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.nav_active {
+    color: var(--purpleOnBlack);
 }
 
 footer {
