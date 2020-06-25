@@ -104,10 +104,9 @@ header {
     height: 10vh;
     min-height: 75px;
     vertical-align: middle;
-    background: white;
+    background-color: rgba(255, 255, 255, .95);
     position: sticky;
     top: 0;
-    opacity: 0.95;
     transition: .3s;
     padding: 5px;
 }
