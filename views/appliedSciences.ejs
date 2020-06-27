@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;550;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/appliedSciences.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Early College Scholars | CASIIT</title>
+
+
+</head>
+
+<body>
+    <%include embeds/header.ejs%>
+
+    <div class="main">
+        <h1 class="mainTitle">Applied Sciences Courses</h1>
+
+    </div>
+
+    <div class="whatASCourses">
+        <div class="whatASCourses_content">
+            <h2 class="whatASCourses_heading">Applied Sciences</h2>
+            <p class="whatASCourses_desc">Applied Sciences courses teach valuable knowledge and skills in the modern
+                world. Students learn how to use their knowledge of science to solve problems in areas such as
+                engineering and robotics.
+                <br />
+                <br />
+                These courses also include computer science. Our computer science courses start with an introduction in
+                Java, while then building up to advanced data structures and other more advanced computer concepts
+                beyond programming.
+            </p>
+        </div>
+    </div>
+
+    <div class="listCourses">
+        <h2 class="listCourses_heading">So what Applied Sciences Courses do we offer?</h2>
+        <div class="listCourses_tableContainer">
+            <table class="listCourses_table">
+                <tr>
+                    <th>Course id</th>
+                    <th>Course name</th>
+                    <th>Grade level</th>
+                </tr>
+                <%
+                        for(let i = 0; i < appliedSciencesCourses.length; i++) {                        
+                    %>
+                <tr>
+                    <td>
+                        <%=(appliedSciencesCourses[i].id != null) ? appliedSciencesCourses[i].id : ""%>
+                    </td>
+                    <td>
+                        <p class="courseNameP">
+                            <%=(appliedSciencesCourses[i].name != null) ? appliedSciencesCourses[i].name : ""%>
+                        </p>
+                    </td>
+                    <td>
+                        <%=(appliedSciencesCourses[i].grade != null) ? appliedSciencesCourses[i].grade : ""%>
+                    </td>
+                </tr>
+                <%
+                        }
+                    %>
+            </table>
+        </div>
+    </div>
+
+    <%include embeds/footer.ejs%>
+</body>
+
+</html>
