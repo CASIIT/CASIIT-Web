@@ -300,3 +300,16 @@ footer {
     font-weight: 700;
 }
 
+.inlineLinks {
+    font-weight: 550;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.purpleText {
+    color: var(--purpleOnBlack);
+}
+
+.toGreenOnHighlight:hover {
+    color: var(--themeGreen);
+}
