@@ -30,14 +30,18 @@
 
 
     <% include embeds/header.ejs%>
+
+    <script type="text/javascript" src="js/header.js"></script>
     <script>
-        let elements = Array.from(document.getElementsByClassName("header__nav__listItem__a"));
-        elements.forEach(element => {
-            if (element.innerText.toLowerCase() == "faq") {
-                element.classList.add("nav_active");
-            }
-        });
+        highlightActiveLink("faq");
+        // let elements = Array.from(document.getElementsByClassName("header__nav__listItem"));
+        // elements.forEach(element => {
+        //     if (element.innerText.toLowerCase() == "faq") {
+        //         element.classList.add("nav_active");
+        //     }
+        // });
     </script>
+
 
     <div class="faqMain">
         <h1 class="faqMainHeading">Frequently Asked Questions</h1>

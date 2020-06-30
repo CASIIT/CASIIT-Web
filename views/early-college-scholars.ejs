@@ -21,14 +21,12 @@
 
 <body>
     <%include embeds/header.ejs%>
+
+    <script type="text/javascript" src="js/header.js"></script>
     <script>
-        let elements = Array.from(document.getElementsByClassName("header__nav__listItem__a"));
-        elements.forEach(element => {
-            if (element.innerText.toLowerCase() == "early college scholars") {
-                element.classList.add("nav_active");
-            }
-        });
+        highlightActiveLink("early college scholars");
     </script>
+
     <div class="introSection">
         <h2 class="introSectionTitle">Early College Scholars</h2>
 

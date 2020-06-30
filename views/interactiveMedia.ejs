@@ -22,6 +22,15 @@
 <body>
     <%include embeds/header.ejs%>
 
+    <script>
+        let elements = Array.from(document.getElementsByClassName("header__nav__listItem"));
+        elements.forEach(element => {
+            if (element.innerText.toLowerCase() == "courses") {
+                element.classList.add("nav_active");
+            }
+        });
+    </script>
+
     <div class="main">
         <h1 class="mainTitle">Interactive Media Courses</h1>
 

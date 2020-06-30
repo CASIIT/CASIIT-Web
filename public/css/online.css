@@ -1,7 +1,7 @@
 .main {
     min-height: 40vh;
-    background: #262626 url('../images/online/Group\ 25.svg') no-repeat center center;
-    background-size: cover;
+    background: #262626 url('../images/online/Group\ 26.svg') no-repeat top center;
+    background-size: 100%;
     text-align: center;
     padding: 50px;
 }
@@ -103,4 +103,51 @@
 .onlineCoursesIntro__col__moreInfoButton:hover {
     background-color: #652d92;
     cursor: pointer;
+}
+
+.onlineOptions {
+    background-color: white;
+    text-align: center;
+    padding: 60px;
+    min-height: 60vh;
+}
+
+.onlineOptions_header {
+    color: var(--themePurple);
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.onlineOptions_content {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    row-gap: 125px;
+    column-gap: 50px;
+    text-align: left;
+    max-width: 65%;
+}
+
+.onlineOptions_subheading {
+    color: var(--themePurple);
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    font-weight: 550
+}
+
+.onlineOptions_text {
+    font-size: 1em;
+    font-weight: 500;
+    max-width: 80%;
+}
+
+.vertical_center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onlineOptions_content img {
+    width: 250px;
 }

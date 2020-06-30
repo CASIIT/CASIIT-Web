@@ -9,5 +9,14 @@ function adjustHeaderColor() {
     }
 }
 
+function highlightActiveLink(linkText, linkLocationClassName = "header__nav__listItem__a") {
+    let elements = Array.from(document.getElementsByClassName(linkLocationClassName));
+    elements.forEach(element => {
+        console.log(element.innerText);
+        if (element.innerText.toLowerCase() == linkText) {
+            element.classList.add("nav_active");
+        }
+    });
+}
 
-document.body.onscroll = adjustHeaderColor;
+document.body.addEventListener("scroll", adjustHeaderColor);
