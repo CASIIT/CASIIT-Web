@@ -7,7 +7,7 @@
     background-size: 100%; */
     min-height: 50vh;
     width: 100%;
-    background: black  url('../images/faq/Group 10.svg') no-repeat center bottom;
+    background: whitesmoke url('../images/faq/Group 9.svg') no-repeat center center;
     /* background-size: 100vw 50vh; */
     background-size: cover;
     text-align: center;
@@ -48,9 +48,12 @@
     background-color: #b6f1b9;
 }
 
+.collapseAll {
+    margin-bottom: 10px;
+}
+
 .questions {
     padding: 50px;
-
 }
 
 .question {

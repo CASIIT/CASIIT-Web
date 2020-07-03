@@ -20,6 +20,7 @@
     margin-bottom: 30px;
     margin-top: -80px;
     width: 175px;
+    z-index: 3;
 
 }
 
@@ -71,13 +72,20 @@
     max-width: 100%;
 }
 
+.newsCaption {
+    margin-top: 10px;
+    font-weight: 550;
+}
+
 .slick-prev:before {
     width: 100px !important;
     color: black !important;
+    cursor: pointer;
 }
 
 .slick-next:before {
     color: black !important;
+    cursor: pointer;
 }
 
 .whatIsCasiit {

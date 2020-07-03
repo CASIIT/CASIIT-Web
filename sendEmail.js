@@ -1,28 +1,28 @@
 const nodemailer = require('nodemailer');
 
-function sendEmail(name, email, question) {
-    var transporter = nodemailer.createTransport({
-        service: 'yahoo',
-        auth: {
-            user: 'usoops05@yahoo.com',
-            pass: '556Idsmash'
-        }
-    });
+module.exports = {
+    sEmail: function (name, email, question) {
+        var transporter = nodemailer.createTransport({
+            service: 'yahoo',
+            auth: {
+                user: 'usoops05@yahoo.com',
+                pass: 'qeihulxgobufacpz'
+            }
+        });
 
-    var mailOptions = {
-        from: 'usoops05@yahoo.com',
-        to: 'captainus55@gmail.com',
-        subject: 'CASIIT Question - ' + name,
-        text: question
-    };
+        var mailOptions = {
+            from: 'usoops05@yahoo.com',
+            to: 'captainus55@gmail.com',
+            subject: 'CASIIT Question - ' + name,
+            text: question
+        };
 
-    transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-            console.log(error);
-        } else {
-            console.log('Email sent: ' + info.response);
-        }
-    });
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log('Email sent: ' + info.response);
+            }
+        });
+    }
 }
-
-module.exports = sendEmail;
