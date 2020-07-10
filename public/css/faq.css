@@ -83,7 +83,8 @@
 .expanded,
 .question:hover {
     border: 1px solid var(--themeGreen);
-    border-left: 30px solid var(--themeGreen)/*#646464*/;
+    border-left: 30px solid var(--themeGreen)/*#646464*/
+    ;
 }
 
 .expanded:after {
@@ -155,7 +156,6 @@
     display: block;
     margin-top: 25px;
     margin-bottom: 8px;
-
 }
 
 .askQuestionInput {
@@ -172,6 +172,23 @@
     background-color: white;
 }
 
+.askQuestionInput:required,
+.askQuestionInput:invalid {
+    box-shadow: none;
+}
+
+.errorHandling {
+    color: red;
+    font-weight: 500;
+    font-size: .85em;
+}
+
+#questionMessage {
+    font-weight: 600;
+    font-size: 1em;
+    color: green;
+}
+
 .askQuestionSubmitButton {
     margin-top: 25px;
     border: none;
@@ -185,10 +202,7 @@
     transition: .3s;
 }
 
-.askQuestionSubmitButton:hover {
-
-}
-
+.askQuestionSubmitButton:hover {}
 
 
 /* .intro {
