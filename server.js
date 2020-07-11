@@ -102,7 +102,7 @@ app.get('/points', (req, res) => {
 });
 
 app.post('/sendEmail', [
-        check('name').notEmpty().withMessage("What's your name?").matches(/^[a-z_. -]+$/i).withMessage("Please enter a valid name"),
+        check('name').trim().notEmpty().withMessage("What's your name?").matches(/^[a-z_. -]+$/i).withMessage("Please enter a valid name"),
         check('email').isEmail().withMessage("Please enter a valid email"),
         check('questionInput').trim().notEmpty().withMessage("What's your question?")
     ],

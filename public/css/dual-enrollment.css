@@ -37,7 +37,7 @@
 
 .whatIsDEContent {
     margin: 0 auto;
-    text-align:left;
+    text-align: left;
     width: 50%;
     font-size: 1.1em;
 }
@@ -49,7 +49,6 @@
 }
 
 .whyDE {
-    margin-top: 100px;
     padding: 30px;
     padding-top: 40px;
     text-align: center;
@@ -64,7 +63,7 @@
 
 .whyDEContent {
     width: 40%;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: left;
     margin-top: 60px;
     color: #004200;
@@ -99,7 +98,7 @@
     font-size: 2em;
     margin-bottom: 80px;
     font-weight: 600;
-}   
+}
 
 .howToDE__content {
     width: 60%;
@@ -107,7 +106,6 @@
 
 .howToDE__list {
     counter-reset: item;
-
 }
 
 .howToDE__list li {
@@ -133,7 +131,6 @@
 .deCasiitCourses {
     padding: 75px;
     padding-top: 40px;
- 
     text-align: center;
     min-height: 60vh;
     font-family: 'Quicksand';
@@ -181,5 +178,5 @@
 
 .moreDetailsButton {
     margin: 50px;
-    background-color:rgb(10, 97, 10)
+    background-color: rgb(10, 97, 10)
 }

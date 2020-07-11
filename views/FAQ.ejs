@@ -72,7 +72,7 @@
                 <div class="askQuestionFormColumnLeft">
                     <div class="leftColumnContent"><img src="images/logo.png" alt="CASIIT Logo" /></div>
                 </div>
-                <form action="sendEmail" class="askQuestionForm" method="POST">
+                <form action="sendEmail" class="askQuestionForm" method="POST" id="askQuestionForm">
                     <label for="name">* Full Name:</label>
                     <input type="text" class="askQuestionInput" id="name" name="name" value="<%=data.name%>" required="required" />
                     <p id="nameErrors" class="errorHandling">

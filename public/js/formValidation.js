@@ -1,7 +1,7 @@
 const name = document.getElementById("name");
 const email = document.getElementById("email");
 const question = document.getElementById("questionInput");
-const submitButton = document.getElementById("submit");
+const askQuestionForm = document.getElementById("askQuestionForm");
 let nameErrors = document.getElementById("nameErrors");
 let emailErrors = document.getElementById("emailErrors");
 let questionErrors = document.getElementById("questionErrors");
@@ -20,7 +20,9 @@ function validateQuestion(q) {
 }
 
 function validateForm(n, e, q) {
-    return validateName(n) && validateEmail(e) && validateQuestion(q);
+    let valid = validateName(n) && validateEmail(e) && validateQuestion(q);
+    console.log(valid);
+    return valid;
 }
 
 name.addEventListener("blur", (event) => {
@@ -55,6 +57,11 @@ email.addEventListener("input", (event) => {
     }
 });
 
-submitButton.addEventListener("submit", (event) => {
-    validateForm(name.value, email, question.value);
+console.log("Adding event listener");
+askQuestionForm.addEventListener("submit", (event) => {
+    let isValid = validateForm(name.value, email, question.value);
+    if (!isValid) {
+        event.preventDefault();
+    }
+    return isValid;
 });
