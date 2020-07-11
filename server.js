@@ -51,18 +51,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
-app.get('/', (req, res) => {
-    res.render('index', {
-        newsPosts: [
-            { heading: "Hello", content: "This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content " },
-            { heading: "Hello", content: "This is the post content 2" },
-            { heading: "Hello", content: "This is the post content 3" }
-        ]
-    });
-});
-
-app.get('/FAQ', (req, res) => {
+function loadFAQPage(req, res) {
     res.render('FAQ', {
         questionsList: faqs,
         data: {
@@ -77,7 +66,20 @@ app.get('/FAQ', (req, res) => {
         },
         msg: ""
     });
+}
+
+
+app.get('/', (req, res) => {
+    res.render('index', {
+        newsPosts: [
+            { heading: "Hello", content: "This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content This is the post content " },
+            { heading: "Hello", content: "This is the post content 2" },
+            { heading: "Hello", content: "This is the post content 3" }
+        ]
+    });
 });
+
+app.get('/FAQ', loadFAQPage);
 
 app.get('/dual-enrollment', (req, res) => {
     res.render('dual-enrollment');
@@ -100,6 +102,8 @@ app.get('/calendar', (req, res) => {
 app.get('/points', (req, res) => {
     res.render('points');
 });
+
+app.get('/sendEmail', loadFAQPage);
 
 app.post('/sendEmail', [
         check('name').trim().notEmpty().withMessage("What's your name?").matches(/^[a-z_. -]+$/i).withMessage("Please enter a valid name"),
