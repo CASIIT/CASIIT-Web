@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;550;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/interactiveMedia.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Media | CASIIT</title>
+
+
+</head>
+
+<body>
+    <%include embeds/header.ejs%>
+        <script type="text/javascript" src="js/header.js"></script>
+
+        <script>
+            highlightActiveLink("courses", "dropBtn");
+        </script>
+
+        <div class="main">
+            <h1 class="mainTitle">Interactive Media Courses</h1>
+
+        </div>
+
+        <div class="whatIMCourses">
+            <div class="whatIMCourses_content">
+                <h2 class="whatIMCourses_heading">Interactive Media</h2>
+                <p class="whatIMCourses_desc">Interactive Media courses focus on the art and graphics side of technology. These courses teach students to put their artistic skills to good use with editing software. This area includes graphic design courses and art courses.
+                    <br />
+                    <br /> These courses also include photography in which students learn to take quality photos and enhance them using computer software.
+                </p>
+            </div>
+        </div>
+
+        <div class="listCourses">
+            <h2 class="listCourses_heading">So what Interactive Media Courses do we offer?</h2>
+            <div class="listCourses_tableContainer">
+                <table class="listCourses_table">
+                    <tr>
+                        <th>Course id</th>
+                        <th>Course name</th>
+                        <th>Grade level</th>
+                    </tr>
+                    <%
+                for(let i = 0; i < interactiveMediaCourses.length; i++) {                        
+            %>
+                        <tr>
+                            <td>
+                                <%=(interactiveMediaCourses[i].id != null) ? interactiveMediaCourses[i].id : ""%>
+                            </td>
+                            <td>
+                                <p class="courseNameP">
+                                    <%=(interactiveMediaCourses[i].name != null) ? interactiveMediaCourses[i].name : ""%>
+                                </p>
+                            </td>
+                            <td>
+                                <%=(interactiveMediaCourses[i].grade != null) ? interactiveMediaCourses[i].grade : ""%>
+                            </td>
+                        </tr>
+                        <%
+                }
+            %>
+                </table>
+            </div>
+        </div>
+
+        <%include embeds/footer.ejs%>
+</body>
+
+</html>

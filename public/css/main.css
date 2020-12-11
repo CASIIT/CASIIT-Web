@@ -1,0 +1,319 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+:root {
+    --themePurple: #652D92;
+    --themeGreen: #16db20;
+    --textGreen: #12b11a;
+    --purpleOnBlack: #820FDF;
+}
+
+header {
+    width: 100%;
+    min-height: 75px;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, .95);
+    position: sticky;
+    top: 0;
+    transition: .3s;
+    padding: 5px;
+    z-index: 2;
+}
+
+#verticalAlignmentHelper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#homeLink {
+    vertical-align: middle;
+    margin-left: 7.5vw;
+    position: relative;
+    opacity: 1;
+}
+
+#headerLogo {
+    width: 85px;
+    transition: .3s;
+}
+
+.headerNav {
+    float: right;
+    margin:0;
+    overflow: hidden;
+    vertical-align: middle;
+    opacity: 1;
+}
+
+.header__nav__list {
+    margin: 0;
+    margin-right: 100px;
+    padding: 0;
+    opacity: 1;
+}
+
+.header__nav__listItem {
+    display:inline-block;
+    list-style-type:none;
+    padding: 6px;
+    padding-right: 8px;
+    opacity: 1;
+}
+
+.header__nav__listItem:not(:last-child) {
+    border-right: 1px solid var(--themePurple);
+}
+
+.header__nav__listItem__a:hover {
+    color: green;
+}
+
+.header__nav__listItem__a {
+    display: block;
+    text-decoration: none;
+    color: var(--themeGreen);
+    opacity: 1;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.dropdown {
+    display: inline;
+}
+
+.dropBtn {
+    border: none;
+    color: var(--themeGreen);
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    margin-left: -50px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: .9em;
+    font-weight: 550;
+    transition: .15s;
+}
+/* 
+.dropdown_content a:hover {
+    border-bottom: 5px solid var(--purpleOnBlack);
+    padding-bottom: 7px;
+    transition: .15s border, padding;
+} */
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.nav_active {
+    color: var(--purpleOnBlack);
+}
+
+footer {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 25px;
+    text-align:center;
+    margin:0 auto;
+    padding: 20px;
+    background-color: var(--themePurple);
+    min-height: 300px;
+    color:white;
+}
+
+.footerMissionStatement {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footerColumn {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footerHeader {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.footerText {
+    font-weight: 500;
+}
+
+.footerLink {
+    color: #16db20;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.footerCopyright {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* General Style classes */
+
+.button {
+    min-width: 200px;
+    margin-top: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #652d92;
+    cursor: pointer;
+}
+
+.sectionHeader {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.inlineLinks {
+    font-weight: 550;
+    transition: .3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.purpleText {
+    color: var(--purpleOnBlack);
+}
+
+.toGreenOnHover:hover {
+    color: var(--themeGreen);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;550;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/informationTechnology.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Information Technology | CASIIT</title>
+
+
+</head>
+
+<body>
+    <%include embeds/header.ejs%>
+
+    <script type="text/javascript" src="js/header.js"></script>
+    <script>
+        highlightActiveLink("courses", "dropBtn");
+    </script>
+
+    <div class="main">
+        <h1 class="mainTitle">Information Technology Courses</h1>
+
+    </div>
+
+    <div class="whatITCourses">
+        <div class="whatITCourses_content">
+            <h2 class="whatITCourses_heading">Information Technology</h2>
+            <p class="whatITCourses_desc">IT Courses are general technology courses including the internet of things,
+                data management, cybersecurity, networking, and more.
+                <br />
+                <br />
+                These courses serve as the basis for many streams in the technology industry.
+            </p>
+        </div>
+    </div>
+
+    <div class="listCourses">
+        <h2 class="listCourses_heading">So what IT Courses do we offer?</h2>
+        <div class="listCourses_tableContainer">
+            <table class="listCourses_table">
+                <tr>
+                    <th>Course id</th>
+                    <th>Course name</th>
+                    <th>Grade level</th>
+                </tr>
+                <%
+                    for(let i = 0; i < iTCourses.length; i++) {                        
+                %>
+                <tr>
+                    <td>
+                        <%=(iTCourses[i].id != null) ? iTCourses[i].id : ""%>
+                    </td>
+                    <td>
+                        <p class="courseNameP">
+                            <%=(iTCourses[i].name != null) ? iTCourses[i].name : ""%>
+                        </p>
+                    </td>
+                    <td>
+                        <%=(iTCourses[i].grade != null) ? iTCourses[i].grade : ""%>
+                    </td>
+                </tr>
+                <%
+                    }
+                %>
+            </table>
+        </div>
+    </div>
+
+    <%include embeds/footer.ejs%>
+</body>
+
+</html>

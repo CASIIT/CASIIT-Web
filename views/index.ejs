@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/general.css" />
-    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link href="/css/home.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +19,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="/js/newsSlideShow.js"></script>
+
 
     <title>CASIIT | Home</title>
 
@@ -25,83 +27,171 @@
 
 <body onLoad="slideShowInit();">
     <%include embeds/header.ejs%>
-    <div class="aboutCasiit">
-        <h2 class="sectionTitle">CASIIT</h2>
 
-        <p class="aboutCasiit__descriptionP">CASIIT is the specialty program of Battlefield High School to prepare
-            students for the future. This unique high school program encompasses everything from graphic design to
-            computer science.</p>
+
+    <div class="homeMain">
+        <div class="homeMainContent">
+            <img src="images/fullLogo.svg" alt="CASIIT Logo" class="homeMainLogo" />
+             <h1 class="homeMainHeading">
+                 Center for Applied Sciences,
+             </h1>
+             <h1 class="homeMainHeading">
+                Interactive and Information Technology
+             </h1>
+            <h2 class="homeMainSubheading">Shaping lives with science and technology</h2>
+            <button class="homeMainButton button">Apply Now</button>
+        </div>
     </div>
 
-    <div class="news">
-        <h2 class="sectionTitle">CASIIT News</h2>
+    <div class="newsSection">
+        <h2 class="newsHeading">News</h2>
+
         <div class="news__slideshowContainer">
 
             <div class="news__slide">
                 <img src="/images/stockPhoto.jpg" class="newsImage">
-                <div class="text ">Caption Text</div>
+                <div class="newsCaption ">Caption Text</div>
             </div>
 
             <div class="news__slide">
                 <img src="/images/stockPhoto.jpg" class="newsImage">
-                <div class="text ">Caption Two</div>
+                <div class="newsCaption ">Caption Two</div>
             </div>
 
             <div class="news__slide">
                 <img src="/images/stockPhoto.jpg" class="newsImage">
-                <div class="text ">Caption Three</div>
+                <div class="newsCaption ">Caption Three</div>
             </div>
 
         </div>
-        <br>
-
     </div>
 
-    <div class="programRequirements ">
-        <h3 class="sectionTitle ">Program Requirements</h3>
-        <div class="programRequirements__subtitle ">As a member of the CASIIT program, there are a number of
-            requirements that must be completed to graduate the program.</div>
-        <div class="programRequirements__content ">
-            <ul class="programRequirements__content__list">
-                <li>Complete 10 hours of volunteer service (per year in the program)</li>
-                <li>Maintain a minimum of 2.5 GPA in CASIIT Courses</li>
-                <li>Take at least one CASIIT course per year</li>
-                <li>Maintain Satisfactory Behavior</li>
-                <li>Complete CASIIT Portfolio</li>
-            </ul>
+    <div class="whatIsCasiit">
+        <h2 class="whatIsCasiitHeader sectionHeader">What is CASIIT?</h2>
+        <p class="whatIsCasiitDesc">CASIIT is the specialty program at Battlefield High School. We teach students
+            essential knowledge they need to succeed in their careers. Whether they pursue a career in technology or
+            not, the skills they develop through our courses will serve them well in their futures. </p>
 
-            <a href="https://battlefieldhs.pwcs.edu/common/pages/DisplayFile.aspx?itemId=40590861">
-                <button class="programRequirements__content__button ">
-                    View Requirement Details
-                </button>
+        <div class="whatIsCasiitCards">
+            <div class="casiitCard">
+                <h3 class="casiitCardHeader">Applied Sciences</h3>
+                <img src="images/home/appliedSciencesImage.png" alt="Applied Sciences Image" class="casiitCardImage" />
+                <p class="casiitCardDescription">Put your science skills to use by learning how to build robots! Or grab
+                    a laptop and learn some Computer Science</p>
+            </div>
+            <div class="casiitCard">
+                <h3 class="casiitCardHeader">Interactive Media</h3>
+                <img src="images/home/interactiveMediaImage.png" alt="Interactive Media Image"
+                    class="casiitCardImage" />
+                <p class="casiitCardDescription">Learn to put your creativity to use. Everyone can use a nice graphic
+                    design once in a while</p>
+            </div>
+            <div class="casiitCard">
+                <h3 class="casiitCardHeader">Information Technology</h3>
+                <img src="images/home/informationTechnologyImage.png" alt="Information Technology Image"
+                    class="casiitCardImage" />
+                <p class="casiitCardDescription">IT is one of the fastest growing areas of value. Learn web development,
+                    databases, and more to have the most valuable skills.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="programRequirements">
+        <div class="sectionHeader programRequirementsHeader">
+            Program Requirements
+        </div>
+        <ul class="programRequirementsList">
+            <li>
+                <div class="programRequirements_numbering">
+                    <div class="programRequirements__number">1</div>
+                </div>
+                <div class="programRequirements_liContent">
+                    <div class="programRequirements_liContentText">Complete 10 hours of volunteer service (per year in
+                        the program). <br />
+                        Volunteering opportunities include assisting at the STEAM Expo, robotics competitions,
+                        educational events, and more.
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </li>
+
+            <li>
+                <div class="programRequirements_numbering">
+                    <div class="programRequirements__number">2</div>
+                </div>
+                <div class="programRequirements_liContent">
+                    <div class="programRequirements_liContentText">Maintain a minimum of 2.5 GPA in CASIIT Courses and
+                        overall GPA.
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <div class="programRequirements_numbering">
+                    <div class="programRequirements__number">3</div>
+                </div>
+                <div class="programRequirements_liContent">
+                    <div class="programRequirements_liContentText">Take at least one CASIIT course per year in the
+                        program.
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <div class="programRequirements_numbering">
+                    <div class="programRequirements__number">4</div>
+                </div>
+                <div class="programRequirements_liContent">
+                    <div class="programRequirements_liContentText">Maintain Satisfactory Behavior throughout their time
+                        in the course
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <div class="programRequirements_numbering">
+                    <div class="programRequirements__number">5</div>
+                </div>
+                <div class="programRequirements_liContent">
+                    <div class="programRequirements_liContentText">Complete CASIIT Portfolio <br />
+                        The Portfolio contains one or two entries per CASIIT course depending on the length and type of
+                        course. See detailed requirements about the portfolio
+                        <a href="portfolio.html" class="inlineLinks purpleText toGreenOnHover">here</a>.
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </li>
+        </ul>
+
+        <p>
+            <a href="https://battlefieldhs.pwcs.edu/common/pages/DisplayFile.aspx?itemId=40590861"
+                class="inlineLinks purpleText toGreenOnHover">View more details >
             </a>
-        </div>
+        </p>
     </div>
 
-    <div class="programApplication ">
-        <h3 class="sectionTitle ">Apply to CASIIT</h3>
-        <div class="programApplication__content ">
-            <p>Joining CASIIT has many benefits for students. It is a great way to invest now for the future. Ready to
-                join?
-                <br />
-                <a href="https://www.pwcs.edu/academics___programs/specialty_programs">
-                    <button class="programApplication__content__button ">
-                        Apply here
-                    </button>
-                </a>
-            </p>
-        </div>
-    </div>
+    <div class="readyToJoin">
+        <div class="readyToJoinContent">
+            <div class="sectionHeader readyToJoinHeader"> Ready to Join?</div>
 
-    <div class="sponsors ">
-        <h3 class="sectionTitle ">Sponsors</h3>
-        <div class="sponsors__content ">
+            <div class="readyToJoinSubHeader">Prepare yourself for your future and apply to Battlefield's specialty
+                program. It's
+                only uphill from here!</div>
 
+            <button class="button readyToJoinButton">Apply Now
+            </button>
         </div>
     </div>
 
     <%include embeds/footer.ejs%>
 
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </body>
+
+<script type="text/javascript" src="/js/header.js"></script>
+<script type="text/javascript" src="/js/headerHome.js"></script>
+<script src="/js/newsSlideShow.js"></script>
 
 </html>

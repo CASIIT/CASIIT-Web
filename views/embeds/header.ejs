@@ -1,34 +1,41 @@
-<div class="header">
+<header id="header" onload="adjustHeaderColor();">
 
-    <a href="/" class="header__logo"><img src="images/logo.png" /></a>
-    <h1 class="header__title"> casiit </h1>
-    <h2 class="header__subtitle">Center for Applied Sciences, Interactive and Information Technology</h2>
-    <nav class="header__nav">
+    <a href="/" id="homeLink"><img src="images/fullLogo.svg" id="headerLogo" /></a>
+
+    <nav class="headerNav">
+        <span id="verticalAlignmentHelper"></span>
         <ul class="header__nav__list">
-            <li class="header__nav__listItem">
-                <a href="/" class="header__nav__listItem__a">Home</a>
-            </li>
             <li class="header__nav__listItem">
                 <a href="/FAQ" class="header__nav__listItem__a">FAQ</a>
             </li>
             <li class="header__nav__listItem">
-                <a href="/dual-enrollment" class="header__nav__listItem__a">NVCC Dual Enrollment</a>
+                <a href="/dual-enrollment" class="header__nav__listItem__a">Dual Enrollment</a>
             </li>
             <li class="header__nav__listItem">
-                <a href="/early-college-scholars" class="header__nav__listItem__a">Virginia Early College Scholars</a>
+                <div class="dropdown">
+                    <p class="dropBtn">Student Opportunities
+                        <!--i class="fa fa-caret-down"></i>-->
+                    </p>
+                    <div class="dropdown_content">
+                        <a href="/early-college-scholars" class="header__nav__listItem__a">Early College Scholars</a>
+                        <a href="/online" class="header__nav__listItem__a">Online Options</a>
+                    </div>
+                </div>
+
             </li>
             <li class="header__nav__listItem">
-                <a href="/courses" class="header__nav__listItem__a">Courses</a>
+                <div class="dropdown">
+                    <p class="dropBtn">Courses
+                        <!--i class="fa fa-caret-down"></i>-->
+                    </p>
+                    <div class="dropdown_content">
+                        <a href="/courses/infoTechCourses" class="header__nav__listItem__a">Information Technology</a>
+                        <a href="/courses/interactiveMedia" class="header__nav__listItem__a">Interactive Media</a>
+                        <a href="/courses/appliedSciences" class="header__nav__listItem__a">Applied Sciences</a>
+                    </div>
+                </div>
+
             </li>
-            <li class="header__nav__listItem">
-                <a href="/online" class="header__nav__listItem__a">Online Summer Options</a>
-            </li>
-            <!-- <li class="header__nav__listItem">
-                <a href="/calendar" class="header__nav__listItem__a">Calendar</a>
-            </li>
-            <li class="header__nav__listItem">
-                <a href="/points" class="header__nav__listItem__a">CASIIT Points</a>
-            </li> -->
         </ul>
     </nav>
-</div>
+</header>

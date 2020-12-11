@@ -4,13 +4,48 @@
     text-align: center;
     min-height: 50vh;
     color: black;
-    background-color: #e7e7e7;
+    background: url('../images/de/mainBackground.svg') no-repeat bottom;
+    background-size: 100%;
+}
+
+.deHeaderTitle {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--purpleOnBlack);
+    margin-bottom: 50px;
 }
 
 .deHeader__content {
     margin: 10px;
     font-size: 1.2em;
-    font-family: 'Quicksand';
+    color: white;
+}
+
+.whatIsDE {
+    text-align: center;
+    min-height: 40vh;
+    padding: 75px;
+    background-color: #fdfdfd;
+    color: black;
+}
+
+.whatIsDETitle {
+    font-size: 2em;
+    color: var(--themePurple);
+    margin-bottom: 75px;
+}
+
+.whatIsDEContent {
+    margin: 0 auto;
+    text-align: left;
+    width: 50%;
+    font-size: 1.1em;
+}
+
+.whatIsDEContent p {
+    line-height: 1.5em;
+    margin-top: 15px;
+    font-weight: 500;
 }
 
 .whyDE {
@@ -18,10 +53,20 @@
     padding-top: 40px;
     text-align: center;
     min-height: 50vh;
-    color: #4b0485;
-    background-color: #b47bda;
-    text-align: left;
     font-family: 'Quicksand';
+}
+
+.whyDETitle {
+    font-size: 2em;
+    color: var(--themePurple);
+}
+
+.whyDEContent {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 60px;
+    color: #004200;
 }
 
 .whyDE__list {
@@ -30,6 +75,7 @@
 
 .whyDE__list li {
     padding-top: 10px;
+    font-weight: 500;
 }
 
 .whyDE__list span {
@@ -38,44 +84,82 @@
 }
 
 .howToDE {
-    padding: 30px;
-    padding-top: 40px;
+    padding: 100px;
+    padding-top: 75px;
     text-align: center;
-    min-height: 50vh;
+    min-height: 80vh;
     text-align: left;
     font-family: 'Quicksand';
+    background-image: linear-gradient(45deg, #50088A, #652D92);
 }
 
 .howToDE .sectionTitle {
-    color: #4b0485;
+    color: #B4C8FF;
+    font-size: 2em;
+    margin-bottom: 80px;
+    font-weight: 600;
 }
 
-.howToDE__col {
-    float: left;
-    width: 50%;
+.howToDE__content {
+    width: 60%;
+}
+
+.howToDE__list {
+    counter-reset: item;
 }
 
 .howToDE__list li {
     padding-top: 10px;
+    margin-top: 15px;
+    color: #f8f8f8;
+    font-size: 1.1em;
+    font-weight: 500;
+    display: block;
+}
+
+.howToDE__list li::before {
+    display: inline-block;
+    content: counter(item) ") ";
+    counter-increment: item;
+    margin-right: .3em;
+}
+
+.howToDE__list a {
+    color: var(--themeGreen);
 }
 
 .deCasiitCourses {
-    padding: 30px;
+    padding: 75px;
     padding-top: 40px;
     text-align: center;
     min-height: 60vh;
-    text-align: left;
     font-family: 'Quicksand';
-    color: white;
-    background-image: linear-gradient(to bottom right, #19181a, #0b050e);
+    color: black;
+    background-color: white;
+}
+
+.deCasiitCoursesTitle {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.deCasiitCourses__content {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    text-align: center;
 }
 
 .deCasiitCourses__content__col {
-    float: left;
+    text-align: left;
+    margin: 0 auto;
     width: 50%;
 }
 
 .deCasiitCourses__content__col__header {
+    text-align: center;
     font-size: 1.3em;
 }
 
@@ -90,4 +174,9 @@
 .deCasiitCourses__content__col__list li::marker {
     content: "✽";
     color: #652d92;
+}
+
+.moreDetailsButton {
+    margin: 50px;
+    background-color: rgb(10, 97, 10)
 }

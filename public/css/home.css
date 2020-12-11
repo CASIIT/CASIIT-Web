@@ -1,0 +1,247 @@
+.homeMain {
+    height: 90vh;
+    width: 100%;
+    background: white url('../images/home/homeMainBackground.svg') no-repeat right top;
+    background-size: 100%;
+}
+
+.homeMainContent {
+    height: 100%;
+    width: 60%;
+    margin-left: 100px;
+    text-align: center;
+    padding: 30px;
+}
+
+.homeMainLogo {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: -80px;
+    width: 175px;
+    z-index: 3;
+
+}
+
+.homeMainHeading {
+    color: var(--themePurple);
+    font-size: 2em;
+    overflow: hidden;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.homeMainSubheading {
+    font-size: 1.4em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.homeMainButton {
+    font-size: 1em;
+    min-width: 250px;
+    min-height: 55px;
+}
+
+.newsSection {
+    padding: 30px;
+    min-height:100vh;
+    text-align: center;
+}
+
+.newsHeading {
+    font-size: 2.5em;
+    color: var(--themePurple);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.newsImage {
+    position: relative;
+}
+
+.news__slideshowContainer {
+    max-width: 50vw;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.newsImage {
+    max-width: 100%;
+}
+
+.newsCaption {
+    margin-top: 10px;
+    font-weight: 550;
+}
+
+.slick-prev:before {
+    width: 100px !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+.slick-next:before {
+    color: black !important;
+    cursor: pointer;
+}
+
+.whatIsCasiit {
+    min-height: 90vh;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: var(--themePurple);
+}
+
+.whatIsCasiitDesc {
+    font-size: 1.1em;
+    margin-top: 30px;
+    line-height: 1.5em;
+}
+
+.whatIsCasiitCards {
+    padding: 45px 30px;
+    margin-top: 70px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.casiitCard {
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    color:black;
+    border: 2px solid var(--themeGreen);
+    border-radius: 10px;
+    height: 350px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2);
+    font-weight: 500;
+
+    transition: .3s;
+}
+
+.casiitCard:hover {
+    box-shadow: 0 9px 16px 0 rgba(255,255,255,0.4);
+}
+
+.casiitCardHeader {
+    color: #160a20;
+    font-size: 1.1em;
+}
+
+.casiitCardImage {
+    width: 100px;
+    margin: 40px;
+}
+
+.casiitCardDescription {
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.programRequirements {
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.programRequirementsHeader {
+    color: var(--themePurple);
+}
+
+.programRequirementsList {
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.programRequirementsList li {
+    list-style-type: none;
+    width: 375px;   
+    height: 190px;
+    border: 4px solid black;
+    border-radius: 8px;
+    margin: 50px;
+    background-size: 100%;
+    background-color:rgb(49, 49, 49); 
+}
+
+.programRequirements_numbering {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    color: #6906b9;
+    display:table;
+    float: left;
+}
+
+.programRequirements__number {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 4.5em;
+}
+
+.programRequirements_liContent {
+    float: right;
+    width: 70%;
+    height: 100%;
+    display:table;
+    color:white;
+}
+
+.programRequirements_liContentText {
+    display:table-cell;
+    vertical-align: middle;
+    font-weight: 400;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+.readyToJoin {
+    text-align: center;
+    padding: 30px;
+    min-height: 50vh;
+    background-color: black;
+    color:white;
+}
+
+.readyToJoinContent {
+    padding: 30px;
+    margin:0 auto;
+    width: 80%;
+    min-height: auto;
+    border-radius: 50px;
+}
+
+.readyToJoinSubHeader {
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.readyToJoinButton {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 75px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: var(--themePurple);
+}
+
+.readyToJoinButton:hover {
+    background-color: var(--themeGreen);
+}

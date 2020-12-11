@@ -2,34 +2,59 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/general.css" />
-    <link rel="stylesheet" type="text/css" href="/css/faq.css" />
-    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link href="/css/faq.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/js/faqQuestions.js"></script>
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CASIIT | FAQ</title>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/faqQuestions.js"></script>
+
+    <title>CASIIT | FAQ </title>
 
 </head>
 
 <body>
-    <%include embeds/header.ejs%>
 
-        <div class="intro">
-            <h2 class="intro__title">FAQ</h3>
-                <p class="intro__subtitle">We receive a variety of similar questions time and again, so we've compiled a list of the most common questions you may want answers to. Take a look below for any questions you have. </p>
+
+    <% include embeds/header.ejs%>
+
+        <script type="text/javascript" src="js/header.js"></script>
+        <script>
+            highlightActiveLink("faq");
+        </script>
+
+        <div class="faqMain">
+            <h1 class="faqMainHeading">Frequently Asked Questions</h1>
+            <h2 class="faqMainSubheading">Have questions? We have answers.</h2>
         </div>
 
+        <!-- <div class="questionSearchDiv">
+        <label for="searchQuestions">Search Questions: </label>
+        <input type="text" class="searchQuestions" id="searchQuestions" />
+    </div> -->
+
         <div class="questions">
+
+            <p id="collapseButton" class="collapseAll inlineLinks purpleText" onclick="faqM.collapseAllQuestions()">Collapse All -
+            </p>
             <% if(questionsList) {
             for(let i = 0; i < questionsList.length; i++) { 
             %>
-                <button id="question" class="question" onClick="questionToggle(this)"> 
-                    <%= questionsList[i].question %>
-                </button>
+                <button id="question" class="question" onClick="faqM.questionToggle(this)">
+            <%= questionsList[i].question %>
+        </button>
                 <div class="questions__content">
                     <p>
                         <%= questionsList[i].answer %>
@@ -41,10 +66,44 @@
     %>
         </div>
         <div class="askQuestion">
-            <h3 class="askQuestion__description">
-                Still have questions? Email CASIIT head Professor Drake at <a href="@mailto:drakegd@pwcs.edu">drakegd@pwcs.edu</a>
-            </h3>
+            <h1 class="askQuestionHeading">Still have Questions?</h1>
+            <h3 class="askQuestionSubheading">Send us a question and we'll get you an answer. Sweet and simple.</h3>
+            <div class="askQuestionFormDiv">
+                <div class="askQuestionFormColumnLeft">
+                    <div class="leftColumnContent"><img src="images/logo.png" alt="CASIIT Logo" /></div>
+                </div>
+                <form action="sendEmail" class="askQuestionForm" method="POST" id="askQuestionForm">
+                    <label for="name">* Full Name:</label>
+                    <input type="text" class="askQuestionInput" id="name" name="name" value="<%=data.name%>" required="required" />
+                    <p id="nameErrors" class="errorHandling">
+                        <%= error.nameError %>
+                    </p>
+
+                    <label for="email">* Email:</label>
+                    <input type="email" class="askQuestionInput" id="email" name="email" value="<%=data.email%>" required="required" />
+                    <p id="emailErrors" class="errorHandling">
+                        <%= error.emailError %>
+                    </p>
+
+                    <label for="questionInput">* Question:</label>
+                    <textarea type="text" class="askQuestionInput" id="questionInput" name="questionInput" rows="4" cols="25" required="required"><%=data.question%></textarea>
+                    <p id="questionErrors" class="errorHandling">
+                        <%= error.questionError %>
+                    </p>
+
+                    <p id="questionMessage">
+                        <%if(msg) { %>
+                            <%= msg %>
+                                <% } %>
+                    </p>
+
+                    <input type="submit" value="Submit" class="askQuestionSubmitButton" name="Submit" id="submit" />
+
+                </form>
+            </div>
         </div>
+
+        <script src="js/formValidation.js" type="text/javascript"></script>
         <% include embeds/footer.ejs%>
 </body>
 
