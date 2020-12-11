@@ -7,12 +7,10 @@
 
 .homeMainContent {
     height: 100%;
-    width: 90%;
+    width: 60%;
     margin-left: 100px;
     text-align: center;
     padding: 30px;
-    display:grid;
-    grid-template-columns: 55% 40%;
 }
 
 .homeMainLogo {
@@ -30,11 +28,12 @@
     overflow: hidden;
     font-weight: 700;
 
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .homeMainSubheading {
     font-size: 1.4em;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 

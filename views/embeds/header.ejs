@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" onload="adjustHeaderColor();">
 
     <a href="/" id="homeLink"><img src="images/fullLogo.svg" id="headerLogo" /></a>
 
@@ -12,7 +12,16 @@
                 <a href="/dual-enrollment" class="header__nav__listItem__a">Dual Enrollment</a>
             </li>
             <li class="header__nav__listItem">
-                <a href="/early-college-scholars" class="header__nav__listItem__a">Early College Scholars</a>
+                <div class="dropdown">
+                    <p class="dropBtn">Student Opportunities
+                        <!--i class="fa fa-caret-down"></i>-->
+                    </p>
+                    <div class="dropdown_content">
+                        <a href="/early-college-scholars" class="header__nav__listItem__a">Early College Scholars</a>
+                        <a href="/online" class="header__nav__listItem__a">Online Options</a>
+                    </div>
+                </div>
+
             </li>
             <li class="header__nav__listItem">
                 <div class="dropdown">
@@ -26,9 +35,6 @@
                     </div>
                 </div>
 
-            </li>
-            <li class="header__nav__listItem">
-                <a href="/online" class="header__nav__listItem__a">Online Options</a>
             </li>
         </ul>
     </nav>

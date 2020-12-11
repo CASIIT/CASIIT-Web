@@ -90,6 +90,7 @@ video {
 
 .header {
     text-align: center;
+    max-height: 50px;
     /*display: block; */
 }
 
