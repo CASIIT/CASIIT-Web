@@ -1,0 +1,77 @@
+.main {
+    background-color: var(--themePurple);
+    text-align: center;
+    color: white;
+    padding: 60px;
+    min-height: 20vh;
+}
+
+.mainTitle {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.mainSubTitle {
+    margin-top: 30px;
+}
+
+.generalRequirements {
+    text-align: center;
+    width: 100%;
+    background: rgb(247, 247, 247) url("../images/programRequirements/medals.png") no-repeat center;
+    background-size: contain;
+    min-height: 50vh;
+    display: flex;
+}
+
+.generalRequirements_body {
+    margin: 0 auto;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(248, 248, 248, 0.9);
+    padding: 80px;
+    
+}
+
+.generalRequirements_header {
+    font-size: 1.4em;
+    margin-bottom: 60px; 
+}
+
+.generalRequirements_list li {
+    margin-bottom: 7px;
+}
+
+.generalRequirements_bodyMain {
+    text-align: left;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.goldMedal {
+    background-color: white;
+    padding: 80px;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.goldMedal_header {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: goldenrod;
+}
+
+.silverMedal {
+    background-color: #1f1f1f;
+    padding: 80px;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.silverMedal_header {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: silver;
+}
