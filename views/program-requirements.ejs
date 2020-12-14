@@ -22,6 +22,11 @@
 <body>
     <%include embeds/header.ejs%>
 
+    <script type="text/javascript" src="js/header.js"></script>
+    <script>
+        highlightActiveLink("program requirements",);
+    </script>
+
     <div class="main">
         <h1 class="mainTitle">What do I need to do?</h1>
         <h3 class="mainSubTitle">Find out what you need to get into CASIIT and what to do once you're here</h3>
@@ -33,10 +38,8 @@
             <div class="generalRequirements_bodyMain">
             
                 <ul class="generalRequirements_list">
-                    <li>Maintain a minimum of a 2.5 GPA in CASIIT courses alone</li>
-                    <li>Maintain a minimum of a 2.5 GPA in all courses (this is seperate from the first requirement)</li>
                     <li>Take at least one CASIIT course every year in the program</li>
-                    <li>Complete the student CASIIT portfolio <a href="casiit_portfolio">Go here</a> to find more about how to write this</li>
+                    <li>Complete the student CASIIT portfolio <a class="inlineLinks purpleText toGreenOnHover" href="casiit_portfolio">Go here</a> to find more about how to write this</li>
                     <li>Complete 10 hours of documented CASIIT Outreach/Community Service</li>
                     <li>Maintain satisfactory behavior</li>
                 </ul>
@@ -46,8 +49,42 @@
 
     <div class="goldMedal">
         <h2 class="goldMedal_header">Gold Medal</h2>
-        <div class="goldMedal_left">
-            <p>There are two levels of recognition you can earn from the program: gold and silver.  </p>
+        <div class="goldMedal_body">
+            <p>There are two levels of recognition you can earn from the program: gold and silver. The gold medal
+                has more rigorous requirements and thus provides a higher level of recognition.  Here is what you need 
+                to earn a gold medal: </p>
+
+                <ul class="programRequirementsList">
+                    <li>
+                        <div class="programRequirements_numbering">
+                            <div class="programRequirements__number">6</div>
+                        </div>
+                        <div class="programRequirements_liContent">
+                            <div class="programRequirements_liContentText">Take at least 6 CASIIT courses</div>
+                        </div>
+                        
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="programRequirements_numbering">
+                            <div class="programRequirements__number">2.5</div>
+                        </div>
+                        <div class="programRequirements_liContent">
+                            
+                            <div class="programRequirements_liContentText">Maintain minimum 2.5 CASIIT GPA</div>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="programRequirements_numbering">
+                            <div class="programRequirements__number">2.5</div>
+                        </div>
+                        <div class="programRequirements_liContent">
+                            <div class="programRequirements_liContentText">Maintain minimum 2.5 overall GPA</div>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
         </div>
     </div>
 
