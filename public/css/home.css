@@ -97,8 +97,10 @@
 
 .whatIsCasiitDesc {
     font-size: 1.1em;
+    margin: 0 auto;
     margin-top: 30px;
     line-height: 1.5em;
+    width: 50%;
 }
 
 .whatIsCasiitCards {
@@ -177,7 +179,7 @@
     width: 30%;
     height: 100%;
     background-color: black;
-    color: goldenrod;
+    color: var(--purpleOnBlack);
     display:table;
     float: left;
 }
