@@ -1,10 +1,14 @@
 let scrollTopMax = 150;
 function adjustHeaderColor() {
-    if ($(window).scrollTop() > scrollTopMax) {
-        document.getElementById("header").style.backgroundColor = "#f5f5f5";
+    console.log("Function");
+    if (window.scrollY > scrollTopMax) {
+        // document.getElementById("header").style.borderBottom = "1px solid black";
+        // document.getElementById("header").style.backgroundColor = "whitesmoke";
+        document.getElementById("header").style.boxShadow = "0px 5px 6px -6px grey";        
+        console.log("Entered if");
     }
     else {
-        document.getElementById("header").style.backgroundColor = "#ffffff";
+        document.getElementById("header").style.backgroundColor = "#fffffff2";
 
     }
 }
@@ -19,4 +23,5 @@ function highlightActiveLink(linkText, linkLocationClassName = "header__nav__lis
     });
 }
 
-document.body.addEventListener("scroll", adjustHeaderColor);
+// document.body.addEventListener("scroll", adjustHeaderColor);s
+window.onscroll = adjustHeaderColor;

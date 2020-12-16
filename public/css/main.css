@@ -101,14 +101,15 @@ video {
 
 header {
     width: 100%;
-    min-height: 75px;
+    min-height: 50px;
     vertical-align: middle;
-    background-color: rgba(255, 255, 255, .95);
+    background-color: #fffffff2;
     position: sticky;
     top: 0;
     transition: .3s;
     padding: 5px;
     z-index: 2;
+    /* border-bottom: 1px solid #f0f0f0; */
 }
 
 #verticalAlignmentHelper {
@@ -125,13 +126,14 @@ header {
 }
 
 #headerLogo {
-    width: 85px;
+    width: 50px;
     transition: .3s;
 }
 
 .headerNav {
     float: right;
     margin:0;
+    padding: 0;
     overflow: hidden;
     vertical-align: middle;
     opacity: 1;
@@ -147,14 +149,13 @@ header {
 .header__nav__listItem {
     display:inline-block;
     list-style-type:none;
-    padding: 6px;
-    padding-right: 8px;
+    padding-right: 11px;
     opacity: 1;
 }
 
-.header__nav__listItem:not(:last-child) {
+/* .header__nav__listItem:not(:last-child) {
     border-right: 1px solid var(--themePurple);
-}
+} */
 
 .header__nav__listItem__a:hover {
     color: green;
