@@ -85,6 +85,10 @@ app.get('/dual-enrollment', (req, res) => {
     res.render('dual-enrollment');
 });
 
+app.get('/program-requirements', (req, res) => {
+    res.render('program-requirements');
+});
+
 app.get('/early-college-scholars', (req, res) => {
     res.render('early-college-scholars');
 });
